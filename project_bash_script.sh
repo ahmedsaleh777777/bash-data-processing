@@ -81,8 +81,8 @@ validate_file() {
     return 0
 }
 
-validate_file ~/found.txt || true
-validate_file ~/notfound.txt || true
-validate_file ~/unreadable.txt || true
-validate_file ~/empty.txt || true
+validate_file test-files/found.txt || true
+validate_file test-files/notfound.txt || true
+validate_file test-files/unreadable.txt || true
+validate_file test-files/empty.txt || true
 
