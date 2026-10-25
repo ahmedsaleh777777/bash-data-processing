@@ -95,12 +95,12 @@ count_lines() {
      wc -l "$file"
 }
 
-extract_column() {
+extract_columns() {
     local file="$1"
-    local column="$2"
+    local columns="$2"
 
     validate_file "$file"
-    tail -n 5 $file | awk -v col="$column" '{print $col}'
+    awk -F ',' -v cols="$columns" 'BEGIN { count = split(cols, arr, ",") }' "$file"
 }
 
 # Test preparation
@@ -123,4 +123,4 @@ validate_file test-files/notfound.txt || true
 validate_file test-files/unreadable.txt || true
 validate_file test-files/empty.txt || true
 count_lines logs/project.log
-extract_column logs/project.log 3
+extract_columns data/data.csv "1,3,5"

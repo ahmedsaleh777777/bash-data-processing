@@ -382,3 +382,53 @@
 [1;33m[2026-10-25 16:04:39] [WARNING] File is empty !: test-files/empty.txt[0m
 [0;32m[2026-10-25 16:04:39] [SUCCESS] File is valid: logs/project.log [0m
 [0;32m[2026-10-25 16:04:39] [SUCCESS] File is valid: logs/project.log [0m
+[0;34m[2026-10-25 16:33:22] [INFO] Starting data processing... [0m
+[0;32m[2026-10-25 16:33:22] [SUCCESS] File processed successfully. [0m
+[1;33m[2026-10-25 16:33:22] [WARNING] File contains empty values.[0m
+[0;31m[2026-10-25 16:33:22] [ERROR] File is missing!!! [0m
+[0;32m[2026-10-25 16:33:25] [SUCCESS] File is valid: test-files/found.txt [0m
+[0;31m[2026-10-25 16:33:25] [ERROR] File not found: test-files/notfound.txt [0m
+[0;31m[2026-10-25 16:33:25] [ERROR] File is not readable: test-files/unreadable.txt [0m
+[1;33m[2026-10-25 16:33:25] [WARNING] File is empty !: test-files/empty.txt[0m
+[0;32m[2026-10-25 16:33:25] [SUCCESS] File is valid: logs/project.log [0m
+[0;32m[2026-10-25 16:33:25] [SUCCESS] File is valid: logs/project.log [0m
+[0;34m[2026-10-25 16:38:12] [INFO] Starting data processing... [0m
+[0;32m[2026-10-25 16:38:12] [SUCCESS] File processed successfully. [0m
+[1;33m[2026-10-25 16:38:12] [WARNING] File contains empty values.[0m
+[0;31m[2026-10-25 16:38:12] [ERROR] File is missing!!! [0m
+[0;32m[2026-10-25 16:38:15] [SUCCESS] File is valid: test-files/found.txt [0m
+[0;31m[2026-10-25 16:38:15] [ERROR] File not found: test-files/notfound.txt [0m
+[0;31m[2026-10-25 16:38:15] [ERROR] File is not readable: test-files/unreadable.txt [0m
+[1;33m[2026-10-25 16:38:15] [WARNING] File is empty !: test-files/empty.txt[0m
+[0;32m[2026-10-25 16:38:15] [SUCCESS] File is valid: logs/project.log [0m
+[0;32m[2026-10-25 16:38:15] [SUCCESS] File is valid: logs/project.log [0m
+[0;34m[2026-10-25 16:39:20] [INFO] Starting data processing... [0m
+[0;32m[2026-10-25 16:39:20] [SUCCESS] File processed successfully. [0m
+[1;33m[2026-10-25 16:39:20] [WARNING] File contains empty values.[0m
+[0;31m[2026-10-25 16:39:20] [ERROR] File is missing!!! [0m
+[0;32m[2026-10-25 16:39:23] [SUCCESS] File is valid: test-files/found.txt [0m
+[0;31m[2026-10-25 16:39:23] [ERROR] File not found: test-files/notfound.txt [0m
+[0;31m[2026-10-25 16:39:23] [ERROR] File is not readable: test-files/unreadable.txt [0m
+[1;33m[2026-10-25 16:39:23] [WARNING] File is empty !: test-files/empty.txt[0m
+[0;32m[2026-10-25 16:39:23] [SUCCESS] File is valid: logs/project.log [0m
+[0;32m[2026-10-25 16:39:23] [SUCCESS] File is valid: logs/project.log [0m
+[0;34m[2026-10-25 16:39:59] [INFO] Starting data processing... [0m
+[0;32m[2026-10-25 16:39:59] [SUCCESS] File processed successfully. [0m
+[1;33m[2026-10-25 16:39:59] [WARNING] File contains empty values.[0m
+[0;31m[2026-10-25 16:39:59] [ERROR] File is missing!!! [0m
+[0;32m[2026-10-25 16:40:02] [SUCCESS] File is valid: test-files/found.txt [0m
+[0;31m[2026-10-25 16:40:02] [ERROR] File not found: test-files/notfound.txt [0m
+[0;31m[2026-10-25 16:40:02] [ERROR] File is not readable: test-files/unreadable.txt [0m
+[1;33m[2026-10-25 16:40:02] [WARNING] File is empty !: test-files/empty.txt[0m
+[0;32m[2026-10-25 16:40:02] [SUCCESS] File is valid: logs/project.log [0m
+[0;32m[2026-10-25 16:40:02] [SUCCESS] File is valid: test-files/data.csv [0m
+[0;34m[2026-10-25 16:46:31] [INFO] Starting data processing... [0m
+[0;32m[2026-10-25 16:46:31] [SUCCESS] File processed successfully. [0m
+[1;33m[2026-10-25 16:46:31] [WARNING] File contains empty values.[0m
+[0;31m[2026-10-25 16:46:31] [ERROR] File is missing!!! [0m
+[0;32m[2026-10-25 16:46:35] [SUCCESS] File is valid: test-files/found.txt [0m
+[0;31m[2026-10-25 16:46:35] [ERROR] File not found: test-files/notfound.txt [0m
+[0;31m[2026-10-25 16:46:35] [ERROR] File is not readable: test-files/unreadable.txt [0m
+[1;33m[2026-10-25 16:46:35] [WARNING] File is empty !: test-files/empty.txt[0m
+[0;32m[2026-10-25 16:46:35] [SUCCESS] File is valid: logs/project.log [0m
+[0;32m[2026-10-25 16:46:35] [SUCCESS] File is valid: data/data.csv [0m
