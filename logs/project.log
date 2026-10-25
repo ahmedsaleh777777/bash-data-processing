@@ -219,3 +219,80 @@
 [0;31m[2026-10-25 14:52:48] [ERROR] File not found: test-files/notfound.txt [0m
 [0;31m[2026-10-25 14:52:48] [ERROR] File is not readable: test-files/unreadable.txt [0m
 [1;33m[2026-10-25 14:52:48] [WARNING] File is empty !: test-files/empty.txt[0m
+[0;34m[2026-10-25 14:57:48] [INFO] Starting data processing... [0m
+[0;32m[2026-10-25 14:57:48] [SUCCESS] File processed successfully. [0m
+[1;33m[2026-10-25 14:57:48] [WARNING] File contains empty values.[0m
+[0;31m[2026-10-25 14:57:48] [ERROR] File is missing!!! [0m
+[0;32m[2026-10-25 14:57:51] [SUCCESS] File is valid: test-files/found.txt [0m
+[0;31m[2026-10-25 14:57:51] [ERROR] File not found: test-files/notfound.txt [0m
+[0;32m[2026-10-25 14:57:51] [SUCCESS] File is valid: test-files/unreadable.txt [0m
+[1;33m[2026-10-25 14:57:51] [WARNING] File is empty !: test-files/empty.txt[0m
+[0;34m[2026-10-25 14:59:40] [INFO] Starting data processing... [0m
+[0;32m[2026-10-25 14:59:40] [SUCCESS] File processed successfully. [0m
+[1;33m[2026-10-25 14:59:40] [WARNING] File contains empty values.[0m
+[0;31m[2026-10-25 14:59:40] [ERROR] File is missing!!! [0m
+[0;32m[2026-10-25 14:59:43] [SUCCESS] File is valid: test-files/found.txt [0m
+[0;31m[2026-10-25 14:59:43] [ERROR] File not found: test-files/notfound.txt [0m
+[0;32m[2026-10-25 14:59:43] [SUCCESS] File is valid: test-files/unreadable.txt [0m
+[1;33m[2026-10-25 14:59:43] [WARNING] File is empty !: test-files/empty.txt[0m
+[0;34m[2026-10-25 15:06:13] [INFO] Starting data processing... [0m
+[0;32m[2026-10-25 15:06:13] [SUCCESS] File processed successfully. [0m
+[1;33m[2026-10-25 15:06:13] [WARNING] File contains empty values.[0m
+[0;31m[2026-10-25 15:06:13] [ERROR] File is missing!!! [0m
+[0;32m[2026-10-25 15:06:16] [SUCCESS] File is valid: test-files/found.txt [0m
+[0;31m[2026-10-25 15:06:16] [ERROR] File not found: test-files/notfound.txt [0m
+[0;31m[2026-10-25 15:06:16] [ERROR] File is not readable: test-files/unreadable.txt [0m
+[1;33m[2026-10-25 15:06:16] [WARNING] File is empty !: test-files/empty.txt[0m
+[0;34m[2026-10-25 15:22:31] [INFO] Starting data processing... [0m
+[0;32m[2026-10-25 15:22:31] [SUCCESS] File processed successfully. [0m
+[1;33m[2026-10-25 15:22:31] [WARNING] File contains empty values.[0m
+[0;31m[2026-10-25 15:22:31] [ERROR] File is missing!!! [0m
+[0;32m[2026-10-25 15:22:34] [SUCCESS] File is valid: test-files/found.txt [0m
+[0;31m[2026-10-25 15:22:34] [ERROR] File not found: test-files/notfound.txt [0m
+[0;31m[2026-10-25 15:22:34] [ERROR] File is not readable: test-files/unreadable.txt [0m
+[1;33m[2026-10-25 15:22:34] [WARNING] File is empty !: test-files/empty.txt[0m
+[0;34m[2026-10-25 15:23:15] [INFO] Starting data processing... [0m
+[0;32m[2026-10-25 15:23:15] [SUCCESS] File processed successfully. [0m
+[1;33m[2026-10-25 15:23:15] [WARNING] File contains empty values.[0m
+[0;31m[2026-10-25 15:23:15] [ERROR] File is missing!!! [0m
+[0;32m[2026-10-25 15:23:18] [SUCCESS] File is valid: test-files/found.txt [0m
+[0;31m[2026-10-25 15:23:18] [ERROR] File not found: test-files/notfound.txt [0m
+[0;31m[2026-10-25 15:23:18] [ERROR] File is not readable: test-files/unreadable.txt [0m
+[1;33m[2026-10-25 15:23:18] [WARNING] File is empty !: test-files/empty.txt[0m
+[0;31m[2026-10-25 15:23:59] [ERROR] Script interrupted by user. [0m
+[0;34m[2026-10-25 15:24:00] [INFO] Starting data processing... [0m
+[0;32m[2026-10-25 15:24:00] [SUCCESS] File processed successfully. [0m
+[1;33m[2026-10-25 15:24:00] [WARNING] File contains empty values.[0m
+[0;31m[2026-10-25 15:24:00] [ERROR] File is missing!!! [0m
+[0;32m[2026-10-25 15:24:03] [SUCCESS] File is valid: test-files/found.txt [0m
+[0;31m[2026-10-25 15:24:03] [ERROR] File not found: test-files/notfound.txt [0m
+[0;31m[2026-10-25 15:24:03] [ERROR] File is not readable: test-files/unreadable.txt [0m
+[1;33m[2026-10-25 15:24:03] [WARNING] File is empty !: test-files/empty.txt[0m
+[0;31m[2026-10-25 15:24:48] [ERROR] Script interrupted by user. [0m
+[0;34m[2026-10-25 15:24:49] [INFO] Starting data processing... [0m
+[0;32m[2026-10-25 15:24:49] [SUCCESS] File processed successfully. [0m
+[1;33m[2026-10-25 15:24:49] [WARNING] File contains empty values.[0m
+[0;31m[2026-10-25 15:24:49] [ERROR] File is missing!!! [0m
+[0;32m[2026-10-25 15:24:52] [SUCCESS] File is valid: test-files/found.txt [0m
+[0;31m[2026-10-25 15:24:52] [ERROR] File not found: test-files/notfound.txt [0m
+[0;31m[2026-10-25 15:24:52] [ERROR] File is not readable: test-files/unreadable.txt [0m
+[1;33m[2026-10-25 15:24:52] [WARNING] File is empty !: test-files/empty.txt[0m
+[0;32m[2026-10-25 15:24:52] [SUCCESS] File is valid: test-files/found.txt [0m
+[0;34m[2026-10-25 15:25:54] [INFO] Starting data processing... [0m
+[0;32m[2026-10-25 15:25:54] [SUCCESS] File processed successfully. [0m
+[1;33m[2026-10-25 15:25:54] [WARNING] File contains empty values.[0m
+[0;31m[2026-10-25 15:25:54] [ERROR] File is missing!!! [0m
+[0;32m[2026-10-25 15:25:57] [SUCCESS] File is valid: test-files/found.txt [0m
+[0;31m[2026-10-25 15:25:57] [ERROR] File not found: test-files/notfound.txt [0m
+[0;31m[2026-10-25 15:25:57] [ERROR] File is not readable: test-files/unreadable.txt [0m
+[1;33m[2026-10-25 15:25:57] [WARNING] File is empty !: test-files/empty.txt[0m
+[0;32m[2026-10-25 15:25:57] [SUCCESS] File is valid: test-files/found.txt [0m
+[0;34m[2026-10-25 15:26:40] [INFO] Starting data processing... [0m
+[0;32m[2026-10-25 15:26:40] [SUCCESS] File processed successfully. [0m
+[1;33m[2026-10-25 15:26:40] [WARNING] File contains empty values.[0m
+[0;31m[2026-10-25 15:26:40] [ERROR] File is missing!!! [0m
+[0;32m[2026-10-25 15:26:43] [SUCCESS] File is valid: test-files/found.txt [0m
+[0;31m[2026-10-25 15:26:43] [ERROR] File not found: test-files/notfound.txt [0m
+[0;31m[2026-10-25 15:26:43] [ERROR] File is not readable: test-files/unreadable.txt [0m
+[1;33m[2026-10-25 15:26:43] [WARNING] File is empty !: test-files/empty.txt[0m
+[0;32m[2026-10-25 15:26:43] [SUCCESS] File is valid: logs/project.log [0m

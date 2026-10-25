@@ -87,15 +87,28 @@ validate_file() {
     return 0
 }
 
+# File processing functions
+
+count_lines() {
+    local file="$1"
+    validate_file "$file"
+     wc -l "$file"
+}
+
+
+
 # Test preparation
 
 prepare_test_files() {
+    mkdir -p "test-files"
+
     echo "Ahmed Saleh" > "test-files/found.txt"
     echo "test data" > "test-files/unreadable.txt"
     touch "test-files/empty.txt"
 
     chmod a-r "test-files/unreadable.txt"
 }
+
 prepare_test_files
 
 # Temporary tests
@@ -103,4 +116,4 @@ validate_file test-files/found.txt || true
 validate_file test-files/notfound.txt || true
 validate_file test-files/unreadable.txt || true
 validate_file test-files/empty.txt || true
-
+count_lines logs/project.log
