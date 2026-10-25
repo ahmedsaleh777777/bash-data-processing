@@ -51,4 +51,23 @@ handle_interrupt() {
     exit 130
 }
 trap handle_interrupt SIGINT
-sleep 30
+sleep 3
+echo sleeping for 3 seconds ...
+
+validate_file() {
+    local file="$1"
+
+    if [[ ! -f "$file" ]]; then
+    log_error "File not found: $file"
+    return 1
+    fi
+
+    if [[ ! -r "$file" ]]; then
+    log_error "File is not readable: $file"
+    return 1
+    fi
+}
+validate_file ~/found.txt
+validate_file ~/notfound.txt
+validate_file ~/unreadable.txt
+
