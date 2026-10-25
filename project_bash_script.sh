@@ -17,6 +17,7 @@ log_info() {
 
     echo -e "${BLUE}[$timestamp] [INFO] $message ${NC}" | tee -a "$LOG_FILE"
 }
+
 log_info "Starting data processing..."
 
 log_success() {
@@ -26,6 +27,7 @@ log_success() {
 
     echo -e "${GREEN}[$timestamp] [SUCCESS] $message ${NC}" | tee -a "$LOG_FILE"
 }
+
 log_success "File processed successfully."
 
 log_warning() {
@@ -35,6 +37,7 @@ log_warning() {
 
     echo -e "${YELLOW}[$timestamp] [WARNING] $message${NC}" | tee -a "$LOG_FILE"
 }
+
 log_warning "File contains empty values."
 
 log_error() {
@@ -44,15 +47,17 @@ log_error() {
 
     echo -e "${RED}[$timestamp] [ERROR] $message ${NC}" | tee -a "$LOG_FILE"
 }
+
 log_error "File is missing!!!"
 
 handle_interrupt() {
     log_error "Script interrupted by user."
     exit 130
 }
+
 trap handle_interrupt SIGINT
-sleep 3
 echo sleeping for 3 seconds ...
+sleep 3
 
 validate_file() {
     local file="$1"
@@ -66,8 +71,18 @@ validate_file() {
     log_error "File is not readable: $file"
     return 1
     fi
+
+    if [[ ! -s "$file" ]]; then
+    log_warning "File is empty !: $file"
+    return 1
+    fi
+
+     log_success "File is valid: $file"
+    return 0
 }
-validate_file ~/found.txt
-validate_file ~/notfound.txt
-validate_file ~/unreadable.txt
+
+validate_file ~/found.txt || true
+validate_file ~/notfound.txt || true
+validate_file ~/unreadable.txt || true
+validate_file ~/empty.txt || true
 

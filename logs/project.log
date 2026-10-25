@@ -117,3 +117,89 @@
 [1;33m[2026-10-25 13:25:38] [WARNING] File contains empty values.[0m
 [0;31m[2026-10-25 13:25:38] [ERROR] File is missing!!! [0m
 [0;31m[2026-10-25 13:25:41] [ERROR] File not found: /home/AhmedSaleh/notfound.txt [0m
+[0;34m[2026-10-25 14:18:39] [INFO] Starting data processing... [0m
+[0;32m[2026-10-25 14:18:39] [SUCCESS] File processed successfully. [0m
+[1;33m[2026-10-25 14:18:39] [WARNING] File contains empty values.[0m
+[0;31m[2026-10-25 14:18:39] [ERROR] File is missing!!! [0m
+[0;34m[2026-10-25 14:18:58] [INFO] Starting data processing... [0m
+[0;32m[2026-10-25 14:18:58] [SUCCESS] File processed successfully. [0m
+[1;33m[2026-10-25 14:18:58] [WARNING] File contains empty values.[0m
+[0;31m[2026-10-25 14:18:58] [ERROR] File is missing!!! [0m
+[0;34m[2026-10-25 14:19:46] [INFO] Starting data processing... [0m
+[0;32m[2026-10-25 14:19:46] [SUCCESS] File processed successfully. [0m
+[1;33m[2026-10-25 14:19:46] [WARNING] File contains empty values.[0m
+[0;31m[2026-10-25 14:19:46] [ERROR] File is missing!!! [0m
+[1;33m[2026-10-25 14:19:49] [WARNING] File is empty ![0m
+[0;31m[2026-10-25 14:19:49] [ERROR] File not found: /home/ahmedsaleh/notfound.txt [0m
+[1;33m[2026-10-25 14:19:49] [WARNING] File is empty ![0m
+[1;33m[2026-10-25 14:19:49] [WARNING] File is empty ![0m
+[0;34m[2026-10-25 14:23:05] [INFO] Starting data processing... [0m
+[0;32m[2026-10-25 14:23:05] [SUCCESS] File processed successfully. [0m
+[1;33m[2026-10-25 14:23:05] [WARNING] File contains empty values.[0m
+[0;31m[2026-10-25 14:23:05] [ERROR] File is missing!!! [0m
+[1;33m[2026-10-25 14:23:08] [WARNING] File is empty ![0m
+[0;31m[2026-10-25 14:23:08] [ERROR] File not found: /home/ahmedsaleh/notfound.txt [0m
+[0;31m[2026-10-25 14:23:08] [ERROR] File is not readable: /home/ahmedsaleh/unreadable.txt [0m
+[1;33m[2026-10-25 14:23:08] [WARNING] File is empty ![0m
+[0;34m[2026-10-25 14:24:10] [INFO] Starting data processing... [0m
+[0;32m[2026-10-25 14:24:10] [SUCCESS] File processed successfully. [0m
+[1;33m[2026-10-25 14:24:10] [WARNING] File contains empty values.[0m
+[0;31m[2026-10-25 14:24:10] [ERROR] File is missing!!! [0m
+[1;33m[2026-10-25 14:24:13] [WARNING] File is empty ![0m
+[0;31m[2026-10-25 14:24:13] [ERROR] File not found: /home/ahmedsaleh/notfound.txt [0m
+[0;31m[2026-10-25 14:24:14] [ERROR] File is not readable: /home/ahmedsaleh/unreadable.txt [0m
+[1;33m[2026-10-25 14:24:14] [WARNING] File is empty ![0m
+[0;34m[2026-10-25 14:26:01] [INFO] Starting data processing... [0m
+[0;32m[2026-10-25 14:26:01] [SUCCESS] File processed successfully. [0m
+[1;33m[2026-10-25 14:26:01] [WARNING] File contains empty values.[0m
+[0;31m[2026-10-25 14:26:01] [ERROR] File is missing!!! [0m
+[0;31m[2026-10-25 14:26:04] [ERROR] File not found: /home/ahmedsaleh/notfound.txt [0m
+[0;31m[2026-10-25 14:26:04] [ERROR] File is not readable: /home/ahmedsaleh/unreadable.txt [0m
+[1;33m[2026-10-25 14:26:04] [WARNING] File is empty ![0m
+[0;34m[2026-10-25 14:28:59] [INFO] Starting data processing... [0m
+[0;32m[2026-10-25 14:28:59] [SUCCESS] File processed successfully. [0m
+[1;33m[2026-10-25 14:28:59] [WARNING] File contains empty values.[0m
+[0;31m[2026-10-25 14:28:59] [ERROR] File is missing!!! [0m
+[0;31m[2026-10-25 14:29:02] [ERROR] File not found: /home/ahmedsaleh/notfound.txt [0m
+[0;31m[2026-10-25 14:29:02] [ERROR] File is not readable: /home/ahmedsaleh/unreadable.txt [0m
+[1;33m[2026-10-25 14:29:02] [WARNING] File is empty !: /home/ahmedsaleh/empty.txt[0m
+[0;34m[2026-10-25 14:30:36] [INFO] Starting data processing... [0m
+[0;32m[2026-10-25 14:30:36] [SUCCESS] File processed successfully. [0m
+[1;33m[2026-10-25 14:30:36] [WARNING] File contains empty values.[0m
+[0;31m[2026-10-25 14:30:36] [ERROR] File is missing!!! [0m
+[0;32m[2026-10-25 14:30:39] [SUCCESS] File is valid: /home/ahmedsaleh/found.txt [0m
+[0;31m[2026-10-25 14:30:39] [ERROR] File not found: /home/ahmedsaleh/notfound.txt [0m
+[0;31m[2026-10-25 14:30:39] [ERROR] File is not readable: /home/ahmedsaleh/unreadable.txt [0m
+[1;33m[2026-10-25 14:30:39] [WARNING] File is empty !: /home/ahmedsaleh/empty.txt[0m
+[0;34m[2026-10-25 14:31:18] [INFO] Starting data processing... [0m
+[0;32m[2026-10-25 14:31:18] [SUCCESS] File processed successfully. [0m
+[1;33m[2026-10-25 14:31:18] [WARNING] File contains empty values.[0m
+[0;31m[2026-10-25 14:31:18] [ERROR] File is missing!!! [0m
+[0;32m[2026-10-25 14:31:21] [SUCCESS] File is valid: /home/ahmedsaleh/found.txt [0m
+[0;31m[2026-10-25 14:31:21] [ERROR] File not found: /home/ahmedsaleh/notfound.txt [0m
+[0;31m[2026-10-25 14:31:21] [ERROR] File is not readable: /home/ahmedsaleh/unreadable.txt [0m
+[1;33m[2026-10-25 14:31:21] [WARNING] File is empty !: /home/ahmedsaleh/empty.txt[0m
+[0;34m[2026-10-25 14:31:24] [INFO] Starting data processing... [0m
+[0;32m[2026-10-25 14:31:24] [SUCCESS] File processed successfully. [0m
+[1;33m[2026-10-25 14:31:24] [WARNING] File contains empty values.[0m
+[0;31m[2026-10-25 14:31:24] [ERROR] File is missing!!! [0m
+[0;32m[2026-10-25 14:31:27] [SUCCESS] File is valid: /home/ahmedsaleh/found.txt [0m
+[0;31m[2026-10-25 14:31:27] [ERROR] File not found: /home/ahmedsaleh/notfound.txt [0m
+[0;31m[2026-10-25 14:31:27] [ERROR] File is not readable: /home/ahmedsaleh/unreadable.txt [0m
+[1;33m[2026-10-25 14:31:27] [WARNING] File is empty !: /home/ahmedsaleh/empty.txt[0m
+[0;34m[2026-10-25 14:35:51] [INFO] Starting data processing... [0m
+[0;32m[2026-10-25 14:35:51] [SUCCESS] File processed successfully. [0m
+[1;33m[2026-10-25 14:35:51] [WARNING] File contains empty values.[0m
+[0;31m[2026-10-25 14:35:51] [ERROR] File is missing!!! [0m
+[0;32m[2026-10-25 14:35:54] [SUCCESS] File is valid: /home/ahmedsaleh/found.txt [0m
+[0;31m[2026-10-25 14:35:54] [ERROR] File not found: /home/ahmedsaleh/notfound.txt [0m
+[0;31m[2026-10-25 14:35:54] [ERROR] File is not readable: /home/ahmedsaleh/unreadable.txt [0m
+[1;33m[2026-10-25 14:35:54] [WARNING] File is empty !: /home/ahmedsaleh/empty.txt[0m
+[0;34m[2026-10-25 14:36:01] [INFO] Starting data processing... [0m
+[0;32m[2026-10-25 14:36:01] [SUCCESS] File processed successfully. [0m
+[1;33m[2026-10-25 14:36:01] [WARNING] File contains empty values.[0m
+[0;31m[2026-10-25 14:36:01] [ERROR] File is missing!!! [0m
+[0;32m[2026-10-25 14:36:04] [SUCCESS] File is valid: /home/ahmedsaleh/found.txt [0m
+[0;31m[2026-10-25 14:36:04] [ERROR] File not found: /home/ahmedsaleh/notfound.txt [0m
+[0;31m[2026-10-25 14:36:04] [ERROR] File is not readable: /home/ahmedsaleh/unreadable.txt [0m
+[1;33m[2026-10-25 14:36:04] [WARNING] File is empty !: /home/ahmedsaleh/empty.txt[0m
