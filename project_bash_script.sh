@@ -10,6 +10,8 @@ NC='\033[0m'
 
 LOG_FILE="logs/project.log"
 
+# Logging functions
+
 log_info() {
     local message="$1"
     local timestamp
@@ -50,6 +52,8 @@ log_error() {
 
 log_error "File is missing!!!"
 
+# Error handling
+
 handle_interrupt() {
     log_error "Script interrupted by user."
     exit 130
@@ -58,6 +62,8 @@ handle_interrupt() {
 trap handle_interrupt SIGINT
 echo sleeping for 3 seconds ...
 sleep 3
+
+# Validation function
 
 validate_file() {
     local file="$1"
@@ -81,6 +87,18 @@ validate_file() {
     return 0
 }
 
+# Test preparation
+
+prepare_test_files() {
+    echo "Ahmed Saleh" > "test-files/found.txt"
+    echo "test data" > "test-files/unreadable.txt"
+    touch "test-files/empty.txt"
+
+    chmod a-r "test-files/unreadable.txt"
+}
+prepare_test_files
+
+# Temporary tests
 validate_file test-files/found.txt || true
 validate_file test-files/notfound.txt || true
 validate_file test-files/unreadable.txt || true
