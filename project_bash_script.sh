@@ -55,7 +55,7 @@ log_error "File is missing!!!"
 # Error handling
 
 handle_interrupt() {
-    log_error "Script interrupted by user."
+    log_error "Script interrupted by uer."
     exit 130
 }
 
@@ -95,7 +95,13 @@ count_lines() {
      wc -l "$file"
 }
 
+extract_column() {
+    local file="$1"
+    local column="$2"
 
+    validate_file "$file"
+    tail -n 5 $file | awk -v col="$column" '{print $col}'
+}
 
 # Test preparation
 
@@ -117,3 +123,4 @@ validate_file test-files/notfound.txt || true
 validate_file test-files/unreadable.txt || true
 validate_file test-files/empty.txt || true
 count_lines logs/project.log
+extract_column logs/project.log 3
