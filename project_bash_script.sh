@@ -124,6 +124,20 @@ extract_columns() {
         ' "$file"
 }
 
+filter_data() {
+    local file=$1
+    local pattern=$2
+
+    validate_file "$file"
+
+    if grep -i "$pattern" "$file" | tail -n 5; then
+        log_success "Matching data found for: $pattern "
+    else
+        log_warning "No matches found for: $pattern "
+    return 1
+    fi
+    }
+
 # Test preparation
 
 prepare_test_files() {
@@ -144,4 +158,6 @@ validate_file test-files/notfound.txt || true
 validate_file test-files/unreadable.txt || true
 validate_file test-files/empty.txt || true
 count_lines logs/project.log
-extract_columns data/data.csv 123
+extract_columns data/data.csv 1,2
+filter_data logs/project.log "err"
+filter_data logs/project.log "hahaha" || true

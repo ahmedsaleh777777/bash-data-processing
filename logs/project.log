@@ -560,3 +560,106 @@
 [0;32m[2026-10-26 15:23:14] [SUCCESS] File is valid: logs/project.log [0m
 [0;32m[2026-10-26 15:23:14] [SUCCESS] File is valid: data/data.csv [0m
 [0;31m[2026-10-26 15:23:14] [ERROR] Invalid column format: 123. Use format like: 1,3,5 [0m
+[0;34m[2026-10-26 16:29:51] [INFO] Starting data processing... [0m
+[0;32m[2026-10-26 16:29:51] [SUCCESS] File processed successfully. [0m
+[1;33m[2026-10-26 16:29:51] [WARNING] File contains empty values.[0m
+[0;31m[2026-10-26 16:29:51] [ERROR] File is missing!!! [0m
+[0;32m[2026-10-26 16:29:54] [SUCCESS] File is valid: test-files/found.txt [0m
+[0;31m[2026-10-26 16:29:54] [ERROR] File not found: test-files/notfound.txt [0m
+[0;31m[2026-10-26 16:29:54] [ERROR] File is not readable: test-files/unreadable.txt [0m
+[1;33m[2026-10-26 16:29:54] [WARNING] File is empty !: test-files/empty.txt[0m
+[0;32m[2026-10-26 16:29:54] [SUCCESS] File is valid: logs/project.log [0m
+[0;32m[2026-10-26 16:29:54] [SUCCESS] File is valid: data/data.csv [0m
+[0;31m[2026-10-26 16:29:54] [ERROR] Invalid column format: 123. Use format like: 1,3,5 [0m
+[0;34m[2026-10-26 16:30:18] [INFO] Starting data processing... [0m
+[0;32m[2026-10-26 16:30:18] [SUCCESS] File processed successfully. [0m
+[1;33m[2026-10-26 16:30:18] [WARNING] File contains empty values.[0m
+[0;31m[2026-10-26 16:30:18] [ERROR] File is missing!!! [0m
+[0;32m[2026-10-26 16:30:21] [SUCCESS] File is valid: test-files/found.txt [0m
+[0;31m[2026-10-26 16:30:21] [ERROR] File not found: test-files/notfound.txt [0m
+[0;31m[2026-10-26 16:30:21] [ERROR] File is not readable: test-files/unreadable.txt [0m
+[1;33m[2026-10-26 16:30:21] [WARNING] File is empty !: test-files/empty.txt[0m
+[0;32m[2026-10-26 16:30:21] [SUCCESS] File is valid: logs/project.log [0m
+[0;32m[2026-10-26 16:30:21] [SUCCESS] File is valid: data/data.csv [0m
+[0;31m[2026-10-26 16:30:21] [ERROR] Invalid column format: 1,2. Use format like: 1,3,5 [0m
+[0;34m[2026-10-26 16:30:46] [INFO] Starting data processing... [0m
+[0;32m[2026-10-26 16:30:46] [SUCCESS] File processed successfully. [0m
+[1;33m[2026-10-26 16:30:46] [WARNING] File contains empty values.[0m
+[0;31m[2026-10-26 16:30:46] [ERROR] File is missing!!! [0m
+[0;32m[2026-10-26 16:30:49] [SUCCESS] File is valid: test-files/found.txt [0m
+[0;31m[2026-10-26 16:30:49] [ERROR] File not found: test-files/notfound.txt [0m
+[0;31m[2026-10-26 16:30:49] [ERROR] File is not readable: test-files/unreadable.txt [0m
+[1;33m[2026-10-26 16:30:49] [WARNING] File is empty !: test-files/empty.txt[0m
+[0;32m[2026-10-26 16:30:49] [SUCCESS] File is valid: logs/project.log [0m
+[0;32m[2026-10-26 16:30:49] [SUCCESS] File is valid: data/data.csv [0m
+[0;31m[2026-10-26 16:30:49] [ERROR] Invalid column format: 1,2. Use format like: 1,3,5 [0m
+[0;32m[2026-10-26 16:30:49] [SUCCESS] File is valid: logs/project.log [0m
+[0;34m[2026-10-26 16:36:00] [INFO] Starting data processing... [0m
+[0;32m[2026-10-26 16:36:00] [SUCCESS] File processed successfully. [0m
+[1;33m[2026-10-26 16:36:00] [WARNING] File contains empty values.[0m
+[0;31m[2026-10-26 16:36:00] [ERROR] File is missing!!! [0m
+[0;34m[2026-10-26 16:39:28] [INFO] Starting data processing... [0m
+[0;32m[2026-10-26 16:39:28] [SUCCESS] File processed successfully. [0m
+[1;33m[2026-10-26 16:39:28] [WARNING] File contains empty values.[0m
+[0;31m[2026-10-26 16:39:28] [ERROR] File is missing!!! [0m
+[0;32m[2026-10-26 16:39:31] [SUCCESS] File is valid: test-files/found.txt [0m
+[0;31m[2026-10-26 16:39:31] [ERROR] File not found: test-files/notfound.txt [0m
+[0;31m[2026-10-26 16:39:31] [ERROR] File is not readable: test-files/unreadable.txt [0m
+[1;33m[2026-10-26 16:39:31] [WARNING] File is empty !: test-files/empty.txt[0m
+[0;32m[2026-10-26 16:39:31] [SUCCESS] File is valid: logs/project.log [0m
+[0;32m[2026-10-26 16:39:31] [SUCCESS] File is valid: data/data.csv [0m
+[0;31m[2026-10-26 16:39:31] [ERROR] Invalid column format: 1,2. Use format like: 1,3,5 [0m
+[0;32m[2026-10-26 16:39:31] [SUCCESS] File is valid: logs/project.log [0m
+[0;34m[2026-10-26 16:41:43] [INFO] Starting data processing... [0m
+[0;32m[2026-10-26 16:41:43] [SUCCESS] File processed successfully. [0m
+[1;33m[2026-10-26 16:41:43] [WARNING] File contains empty values.[0m
+[0;31m[2026-10-26 16:41:43] [ERROR] File is missing!!! [0m
+[0;32m[2026-10-26 16:41:46] [SUCCESS] File is valid: test-files/found.txt [0m
+[0;31m[2026-10-26 16:41:46] [ERROR] File not found: test-files/notfound.txt [0m
+[0;31m[2026-10-26 16:41:46] [ERROR] File is not readable: test-files/unreadable.txt [0m
+[1;33m[2026-10-26 16:41:46] [WARNING] File is empty !: test-files/empty.txt[0m
+[0;32m[2026-10-26 16:41:46] [SUCCESS] File is valid: logs/project.log [0m
+[0;32m[2026-10-26 16:41:46] [SUCCESS] File is valid: data/data.csv [0m
+[0;31m[2026-10-26 16:41:46] [ERROR] Invalid column format: 1,2. Use format like: 1,3,5 [0m
+[0;32m[2026-10-26 16:41:46] [SUCCESS] File is valid: logs/project.log [0m
+[0;34m[2026-10-26 16:42:28] [INFO] Starting data processing... [0m
+[0;32m[2026-10-26 16:42:28] [SUCCESS] File processed successfully. [0m
+[1;33m[2026-10-26 16:42:28] [WARNING] File contains empty values.[0m
+[0;31m[2026-10-26 16:42:28] [ERROR] File is missing!!! [0m
+[0;32m[2026-10-26 16:42:31] [SUCCESS] File is valid: test-files/found.txt [0m
+[0;31m[2026-10-26 16:42:31] [ERROR] File not found: test-files/notfound.txt [0m
+[0;31m[2026-10-26 16:42:31] [ERROR] File is not readable: test-files/unreadable.txt [0m
+[1;33m[2026-10-26 16:42:31] [WARNING] File is empty !: test-files/empty.txt[0m
+[0;32m[2026-10-26 16:42:31] [SUCCESS] File is valid: logs/project.log [0m
+[0;32m[2026-10-26 16:42:31] [SUCCESS] File is valid: data/data.csv [0m
+[0;31m[2026-10-26 16:42:31] [ERROR] Invalid column format: 1,2. Use format like: 1,3,5 [0m
+[0;32m[2026-10-26 16:42:31] [SUCCESS] File is valid: logs/project.log [0m
+[1;33m[2026-10-26 16:42:31] [WARNING] No matches found for: hahah [0m
+[0;34m[2026-10-26 16:43:05] [INFO] Starting data processing... [0m
+[0;32m[2026-10-26 16:43:05] [SUCCESS] File processed successfully. [0m
+[1;33m[2026-10-26 16:43:05] [WARNING] File contains empty values.[0m
+[0;31m[2026-10-26 16:43:05] [ERROR] File is missing!!! [0m
+[0;32m[2026-10-26 16:43:08] [SUCCESS] File is valid: test-files/found.txt [0m
+[0;31m[2026-10-26 16:43:08] [ERROR] File not found: test-files/notfound.txt [0m
+[0;31m[2026-10-26 16:43:08] [ERROR] File is not readable: test-files/unreadable.txt [0m
+[1;33m[2026-10-26 16:43:08] [WARNING] File is empty !: test-files/empty.txt[0m
+[0;32m[2026-10-26 16:43:08] [SUCCESS] File is valid: logs/project.log [0m
+[0;32m[2026-10-26 16:43:08] [SUCCESS] File is valid: data/data.csv [0m
+[0;31m[2026-10-26 16:43:08] [ERROR] Invalid column format: 1,2. Use format like: 1,3,5 [0m
+[0;32m[2026-10-26 16:43:08] [SUCCESS] File is valid: logs/project.log [0m
+[0;32m[2026-10-26 16:43:08] [SUCCESS] Matching data found for: err  [0m
+[0;34m[2026-10-26 16:45:11] [INFO] Starting data processing... [0m
+[0;32m[2026-10-26 16:45:11] [SUCCESS] File processed successfully. [0m
+[1;33m[2026-10-26 16:45:11] [WARNING] File contains empty values.[0m
+[0;31m[2026-10-26 16:45:11] [ERROR] File is missing!!! [0m
+[0;32m[2026-10-26 16:45:14] [SUCCESS] File is valid: test-files/found.txt [0m
+[0;31m[2026-10-26 16:45:14] [ERROR] File not found: test-files/notfound.txt [0m
+[0;31m[2026-10-26 16:45:14] [ERROR] File is not readable: test-files/unreadable.txt [0m
+[1;33m[2026-10-26 16:45:14] [WARNING] File is empty !: test-files/empty.txt[0m
+[0;32m[2026-10-26 16:45:14] [SUCCESS] File is valid: logs/project.log [0m
+[0;32m[2026-10-26 16:45:14] [SUCCESS] File is valid: data/data.csv [0m
+[0;31m[2026-10-26 16:45:14] [ERROR] Invalid column format: 1,2. Use format like: 1,3,5 [0m
+[0;32m[2026-10-26 16:45:14] [SUCCESS] File is valid: logs/project.log [0m
+[0;32m[2026-10-26 16:45:14] [SUCCESS] Matching data found for: err  [0m
+[0;32m[2026-10-26 16:45:14] [SUCCESS] File is valid: logs/project.log [0m
+[1;33m[2026-10-26 16:45:14] [WARNING] No matches found for: hahaha [0m
