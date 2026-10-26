@@ -538,3 +538,25 @@
 [0;32m[2026-10-26 15:11:29] [SUCCESS] File is valid: logs/project.log [0m
 [0;32m[2026-10-26 15:11:29] [SUCCESS] File is valid: data/data.csv [0m
 [0;31m[2026-10-26 15:11:29] [ERROR] Total columns: 5 [0m
+[0;34m[2026-10-26 15:18:15] [INFO] Starting data processing... [0m
+[0;32m[2026-10-26 15:18:15] [SUCCESS] File processed successfully. [0m
+[1;33m[2026-10-26 15:18:15] [WARNING] File contains empty values.[0m
+[0;31m[2026-10-26 15:18:15] [ERROR] File is missing!!! [0m
+[0;32m[2026-10-26 15:18:18] [SUCCESS] File is valid: test-files/found.txt [0m
+[0;31m[2026-10-26 15:18:18] [ERROR] File not found: test-files/notfound.txt [0m
+[0;31m[2026-10-26 15:18:18] [ERROR] File is not readable: test-files/unreadable.txt [0m
+[1;33m[2026-10-26 15:18:18] [WARNING] File is empty !: test-files/empty.txt[0m
+[0;32m[2026-10-26 15:18:18] [SUCCESS] File is valid: logs/project.log [0m
+[0;32m[2026-10-26 15:18:18] [SUCCESS] File is valid: data/data.csv [0m
+[0;31m[2026-10-26 15:18:18] [ERROR] Total columns: 5 [0m
+[0;34m[2026-10-26 15:23:11] [INFO] Starting data processing... [0m
+[0;32m[2026-10-26 15:23:11] [SUCCESS] File processed successfully. [0m
+[1;33m[2026-10-26 15:23:11] [WARNING] File contains empty values.[0m
+[0;31m[2026-10-26 15:23:11] [ERROR] File is missing!!! [0m
+[0;32m[2026-10-26 15:23:14] [SUCCESS] File is valid: test-files/found.txt [0m
+[0;31m[2026-10-26 15:23:14] [ERROR] File not found: test-files/notfound.txt [0m
+[0;31m[2026-10-26 15:23:14] [ERROR] File is not readable: test-files/unreadable.txt [0m
+[1;33m[2026-10-26 15:23:14] [WARNING] File is empty !: test-files/empty.txt[0m
+[0;32m[2026-10-26 15:23:14] [SUCCESS] File is valid: logs/project.log [0m
+[0;32m[2026-10-26 15:23:14] [SUCCESS] File is valid: data/data.csv [0m
+[0;31m[2026-10-26 15:23:14] [ERROR] Invalid column format: 123. Use format like: 1,3,5 [0m

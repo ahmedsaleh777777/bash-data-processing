@@ -107,7 +107,8 @@ extract_columns() {
     fi
 
     total_columns=$(awk -F',' 'NR==1 {print NF; exit}' "$file")
-    log_error "Total columns: $total_columns"
+    
+    log_error "Invalid column format: $columns. Use format like: 1,3,5"
 
     awk -F ',' -v cols="$columns" '
     BEGIN {
