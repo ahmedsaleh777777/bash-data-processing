@@ -100,6 +100,15 @@ extract_columns() {
     local columns="$2"
 
     validate_file "$file"
+
+    if [[ ! "$columns" =~ ^[0-9]+(,[0-9]+)*$ ]]; then
+        log_error "Invalid column format: $columns"
+        return 1    
+    fi
+
+    total_columns=$(awk -F',' 'NR==1 {print NF; exit}' "$file")
+    log_error "Total columns: $total_columns"
+
     awk -F ',' -v cols="$columns" '
     BEGIN {
      count = split(cols, arr, ",")
@@ -134,4 +143,4 @@ validate_file test-files/notfound.txt || true
 validate_file test-files/unreadable.txt || true
 validate_file test-files/empty.txt || true
 count_lines logs/project.log
-extract_columns data/data.csv "1,3,5"
+extract_columns data/data.csv 123
