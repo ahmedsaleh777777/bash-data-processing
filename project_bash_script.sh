@@ -100,7 +100,18 @@ extract_columns() {
     local columns="$2"
 
     validate_file "$file"
-    awk -F ',' -v cols="$columns" 'BEGIN { count = split(cols, arr, ",") }' "$file"
+    awk -F ',' -v cols="$columns" '
+    BEGIN {
+     count = split(cols, arr, ",")
+      }
+
+        {
+            for (i=1; i <= count; i++) {
+                printf "%s ", $arr[i]
+            }
+            print ""
+        }
+        ' "$file"
 }
 
 # Test preparation
