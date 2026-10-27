@@ -149,19 +149,55 @@ calculate_stats() {
 
     validate_file "$file"
 
-     if [[ ! "$column" =~ ^[0-9]+(,[0-9]+)*$ ]]; then
+    if [[ ! "$column" =~ ^[0-9]+$ ]]; then
         log_error "Invalid column format: $column Use format like: 1,3,5"
         return 1    
     fi
 
         awk -F',' -v col="$column" '
-        NR > 1 {
+        NR > 1 && $col != "" {
+            value = $col
+
+            if (count == 0 || value < min) {
+            min = value
+            }
+
+            if (count == 0 || value > max) {
+            max = value
+            }
+            sum += value
             count++
         }
+
         END {
-            print "Count:", count
+            print "----------------"
+            print "Statistics"
+            print "----------------"
+            print "Count  :", count
+            print "Min    :", min
+            print "Max    :", max
+            print "Average:", sum / count
         }
         ' "$file"
+
+}
+
+merge_files() {
+    local output_file="output/merged.txt"
+    local file
+
+    mkdir -p "output"
+
+    for file in "$@"; do
+            if ! validate_file "$file"; then
+                log_error "Merge stopped because file is invalid: $file"
+                return 1
+            fi
+    done
+
+cat "$@" > "$output_file"
+
+log_success "Files merged successfully into: $output_file"
 
 }
 
@@ -197,3 +233,12 @@ echo "=============================="
 filter_data data/data.csv "hahaha" || true
 echo "=============================="
 calculate_stats "data/data.csv" 5
+echo "=============================="
+echo "File 1 data" > data/file1.txt
+echo "File 2 data" > data/file2.txt
+echo "File 3 data" > data/file3.txt
+
+merge_files data/file1.txt data/file2.txt data/file3.txt
+
+cat output/merged.txt
+echo "=============================="
