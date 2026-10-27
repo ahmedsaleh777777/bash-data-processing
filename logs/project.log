@@ -81,3 +81,108 @@
 [2026-10-27 10:26:15] [SUCCESS] Matching data found for: [^a] 
 [2026-10-27 10:26:15] [SUCCESS] File is valid: data/data.csv
 [2026-10-27 10:26:15] [WARNING] No matches found for: [hahaha] 
+[2026-10-27 10:41:53] [INFO] Starting data processing...
+[2026-10-27 10:41:53] [SUCCESS] File processed successfully.
+[2026-10-27 10:41:53] [WARNING] File contains empty values.
+[2026-10-27 10:41:53] [ERROR] File is missing!!!
+[2026-10-27 10:41:56] [SUCCESS] File is valid: test-files/found.txt
+[2026-10-27 10:41:56] [ERROR] File not found: test-files/notfound.txt
+[2026-10-27 10:41:56] [ERROR] File is not readable: test-files/unreadable.txt
+[2026-10-27 10:41:56] [WARNING] File is empty !: test-files/empty.txt
+[2026-10-27 10:41:56] [SUCCESS] File is valid: logs/project.log
+[2026-10-27 10:41:56] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 10:41:56] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 10:41:56] [SUCCESS] Matching data found for: [^a] 
+[2026-10-27 10:41:56] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 10:41:56] [WARNING] No matches found for: [hahaha] 
+[2026-10-27 10:41:56] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 11:18:28] [INFO] Starting data processing...
+[2026-10-27 11:18:28] [SUCCESS] File processed successfully.
+[2026-10-27 11:18:28] [WARNING] File contains empty values.
+[2026-10-27 11:18:28] [ERROR] File is missing!!!
+[2026-10-27 11:18:31] [SUCCESS] File is valid: test-files/found.txt
+[2026-10-27 11:18:31] [ERROR] File not found: test-files/notfound.txt
+[2026-10-27 11:18:31] [ERROR] File is not readable: test-files/unreadable.txt
+[2026-10-27 11:18:31] [WARNING] File is empty !: test-files/empty.txt
+[2026-10-27 11:18:31] [SUCCESS] File is valid: logs/project.log
+[2026-10-27 11:18:31] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 11:18:31] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 11:18:31] [SUCCESS] Matching data found for: [^a] 
+[2026-10-27 11:18:31] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 11:18:31] [WARNING] No matches found for: [hahaha] 
+[2026-10-27 11:18:31] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 11:19:40] [INFO] Starting data processing...
+[2026-10-27 11:19:40] [SUCCESS] File processed successfully.
+[2026-10-27 11:19:40] [WARNING] File contains empty values.
+[2026-10-27 11:19:40] [ERROR] File is missing!!!
+[2026-10-27 11:19:43] [SUCCESS] File is valid: test-files/found.txt
+[2026-10-27 11:19:43] [ERROR] File not found: test-files/notfound.txt
+[2026-10-27 11:19:43] [ERROR] File is not readable: test-files/unreadable.txt
+[2026-10-27 11:19:43] [WARNING] File is empty !: test-files/empty.txt
+[2026-10-27 11:19:43] [SUCCESS] File is valid: logs/project.log
+[2026-10-27 11:19:43] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 11:19:43] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 11:19:43] [SUCCESS] Matching data found for: [^a] 
+[2026-10-27 11:19:43] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 11:19:43] [WARNING] No matches found for: [hahaha] 
+[2026-10-27 11:19:43] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 11:19:52] [INFO] Starting data processing...
+[2026-10-27 11:19:52] [SUCCESS] File processed successfully.
+[2026-10-27 11:19:52] [WARNING] File contains empty values.
+[2026-10-27 11:19:52] [ERROR] File is missing!!!
+[2026-10-27 11:19:55] [SUCCESS] File is valid: test-files/found.txt
+[2026-10-27 11:19:55] [ERROR] File not found: test-files/notfound.txt
+[2026-10-27 11:19:55] [ERROR] File is not readable: test-files/unreadable.txt
+[2026-10-27 11:19:55] [WARNING] File is empty !: test-files/empty.txt
+[2026-10-27 11:19:55] [SUCCESS] File is valid: logs/project.log
+[2026-10-27 11:19:55] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 11:19:55] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 11:19:55] [SUCCESS] Matching data found for: [^a] 
+[2026-10-27 11:19:55] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 11:19:55] [WARNING] No matches found for: [hahaha] 
+[2026-10-27 11:19:55] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 11:20:32] [INFO] Starting data processing...
+[2026-10-27 11:20:32] [SUCCESS] File processed successfully.
+[2026-10-27 11:20:32] [WARNING] File contains empty values.
+[2026-10-27 11:20:32] [ERROR] File is missing!!!
+[2026-10-27 11:20:35] [SUCCESS] File is valid: test-files/found.txt
+[2026-10-27 11:20:35] [ERROR] File not found: test-files/notfound.txt
+[2026-10-27 11:20:35] [ERROR] File is not readable: test-files/unreadable.txt
+[2026-10-27 11:20:35] [WARNING] File is empty !: test-files/empty.txt
+[2026-10-27 11:20:35] [SUCCESS] File is valid: logs/project.log
+[2026-10-27 11:20:35] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 11:20:35] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 11:20:35] [SUCCESS] Matching data found for: [^a] 
+[2026-10-27 11:20:35] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 11:20:35] [WARNING] No matches found for: [hahaha] 
+[2026-10-27 11:20:35] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 11:20:49] [INFO] Starting data processing...
+[2026-10-27 11:20:49] [SUCCESS] File processed successfully.
+[2026-10-27 11:20:49] [WARNING] File contains empty values.
+[2026-10-27 11:20:49] [ERROR] File is missing!!!
+[2026-10-27 11:20:52] [SUCCESS] File is valid: test-files/found.txt
+[2026-10-27 11:20:52] [ERROR] File not found: test-files/notfound.txt
+[2026-10-27 11:20:52] [ERROR] File is not readable: test-files/unreadable.txt
+[2026-10-27 11:20:52] [WARNING] File is empty !: test-files/empty.txt
+[2026-10-27 11:20:52] [SUCCESS] File is valid: logs/project.log
+[2026-10-27 11:20:52] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 11:20:52] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 11:20:52] [SUCCESS] Matching data found for: [^a] 
+[2026-10-27 11:20:52] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 11:20:52] [WARNING] No matches found for: [hahaha] 
+[2026-10-27 11:20:52] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 11:21:36] [INFO] Starting data processing...
+[2026-10-27 11:21:36] [SUCCESS] File processed successfully.
+[2026-10-27 11:21:36] [WARNING] File contains empty values.
+[2026-10-27 11:21:36] [ERROR] File is missing!!!
+[2026-10-27 11:21:39] [SUCCESS] File is valid: test-files/found.txt
+[2026-10-27 11:21:39] [ERROR] File not found: test-files/notfound.txt
+[2026-10-27 11:21:39] [ERROR] File is not readable: test-files/unreadable.txt
+[2026-10-27 11:21:39] [WARNING] File is empty !: test-files/empty.txt
+[2026-10-27 11:21:39] [SUCCESS] File is valid: logs/project.log
+[2026-10-27 11:21:39] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 11:21:39] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 11:21:39] [SUCCESS] Matching data found for: [^a] 
+[2026-10-27 11:21:39] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 11:21:39] [WARNING] No matches found for: [hahaha] 
+[2026-10-27 11:21:39] [SUCCESS] File is valid: data/data.csv

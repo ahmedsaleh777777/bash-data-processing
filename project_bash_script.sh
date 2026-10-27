@@ -143,6 +143,28 @@ filter_data() {
         fi
     }
 
+calculate_stats() {
+    local file="$1"
+    local column="$2"
+
+    validate_file "$file"
+
+     if [[ ! "$column" =~ ^[0-9]+(,[0-9]+)*$ ]]; then
+        log_error "Invalid column format: $column Use format like: 1,3,5"
+        return 1    
+    fi
+
+        awk -F',' -v col="$column" '
+        NR > 1 {
+            count++
+        }
+        END {
+            print "Count:", count
+        }
+        ' "$file"
+
+}
+
 # Test preparation
 
 prepare_test_files() {
@@ -173,3 +195,5 @@ echo "=============================="
 filter_data data/data.csv "^a"
 echo "=============================="
 filter_data data/data.csv "hahaha" || true
+echo "=============================="
+calculate_stats "data/data.csv" 5
