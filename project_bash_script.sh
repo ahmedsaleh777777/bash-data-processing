@@ -17,7 +17,9 @@ log_info() {
     local timestamp
     timestamp=$(date '+%Y-%m-%d %H:%M:%S')
 
-    echo -e "${BLUE}[$timestamp] [INFO] $message ${NC}" | tee -a "$LOG_FILE"
+    echo -e "${BLUE}[$timestamp] [INFO] ${NC} $message "
+    echo -e "[$timestamp] [INFO] $message" >> "$LOG_FILE"
+
 }
 
 log_info "Starting data processing..."
@@ -27,7 +29,9 @@ log_success() {
     local timestamp
     timestamp=$(date '+%Y-%m-%d %H:%M:%S')
 
-    echo -e "${GREEN}[$timestamp] [SUCCESS] $message ${NC}" | tee -a "$LOG_FILE"
+    echo -e "${GREEN}[$timestamp] [SUCCESS] ${NC} $message "
+    echo -e "[$timestamp] [SUCCESS] $message" >> "$LOG_FILE"
+
 }
 
 log_success "File processed successfully."
@@ -37,7 +41,8 @@ log_warning() {
     local timestamp
     timestamp=$(date '+%Y-%m-%d %H:%M:%S')
 
-    echo -e "${YELLOW}[$timestamp] [WARNING] $message${NC}" | tee -a "$LOG_FILE"
+    echo -e "${YELLOW}[$timestamp] [WARNING] ${NC} $message" 
+    echo -e "[$timestamp] [WARNING] $message" >> "$LOG_FILE"
 }
 
 log_warning "File contains empty values."
@@ -47,7 +52,8 @@ log_error() {
     local timestamp
     timestamp=$(date '+%Y-%m-%d %H:%M:%S')
 
-    echo -e "${RED}[$timestamp] [ERROR] $message ${NC}" | tee -a "$LOG_FILE"
+    echo -e "${RED}[$timestamp] [ERROR] ${NC} $message " 
+    echo -e "[$timestamp] [ERROR] $message" >> "$LOG_FILE"
 }
 
 log_error "File is missing!!!"
@@ -55,7 +61,7 @@ log_error "File is missing!!!"
 # Error handling
 
 handle_interrupt() {
-    log_error "Script interrupted by uer."
+    log_error "Script interrupted by user."
     exit 130
 }
 
@@ -102,15 +108,14 @@ extract_columns() {
     validate_file "$file"
 
     if [[ ! "$columns" =~ ^[0-9]+(,[0-9]+)*$ ]]; then
-        log_error "Invalid column format: $columns"
+        log_error "Invalid column format: $columns Use format like: 1,3,5"
         return 1    
     fi
 
-    total_columns=$(awk -F',' 'NR==1 {print NF; exit}' "$file")
+    #total_columns=$(awk -F',' 'NR==1 {print NF; exit}' "$file")
     
-    log_error "Invalid column format: $columns. Use format like: 1,3,5"
 
-    awk -F ',' -v cols="$columns" '
+    awk -F',' -v cols="$columns" '
     BEGIN {
      count = split(cols, arr, ",")
       }
@@ -125,17 +130,17 @@ extract_columns() {
 }
 
 filter_data() {
-    local file=$1
-    local pattern=$2
+        local file="$1"
+        local pattern="$2"
 
-    validate_file "$file"
+        validate_file "$file"
 
-    if grep -i "$pattern" "$file" | tail -n 5; then
-        log_success "Matching data found for: $pattern "
-    else
-        log_warning "No matches found for: $pattern "
-    return 1
-    fi
+        if grep -i "$pattern" "$file"; then
+            log_success "Matching data found for: [$pattern] "
+        else
+            log_warning "No matches found for: [$pattern] "
+            return 1
+        fi
     }
 
 # Test preparation
@@ -145,7 +150,7 @@ prepare_test_files() {
 
     echo "Ahmed Saleh" > "test-files/found.txt"
     echo "test data" > "test-files/unreadable.txt"
-    touch "test-files/empty.txt"
+    > "test-files/empty.txt"
 
     chmod a-r "test-files/unreadable.txt"
 }
@@ -154,10 +159,17 @@ prepare_test_files
 
 # Temporary tests
 validate_file test-files/found.txt || true
+echo "=============================="
 validate_file test-files/notfound.txt || true
+echo "=============================="
 validate_file test-files/unreadable.txt || true
+echo "=============================="
 validate_file test-files/empty.txt || true
+echo "=============================="
 count_lines logs/project.log
+echo "=============================="
 extract_columns data/data.csv 1,2
-filter_data logs/project.log "err"
-filter_data logs/project.log "hahaha" || true
+echo "=============================="
+filter_data data/data.csv "^a"
+echo "=============================="
+filter_data data/data.csv "hahaha" || true
