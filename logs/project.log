@@ -340,3 +340,118 @@
 [2026-10-27 12:47:28] [SUCCESS] File is valid: data/file2.txt
 [2026-10-27 12:47:28] [SUCCESS] File is valid: data/file3.txt
 [2026-10-27 12:47:28] [SUCCESS] Files merged successfully into: output/merged.txt
+[2026-10-27 14:26:09] [INFO] Starting data processing...
+[2026-10-27 14:26:09] [SUCCESS] File processed successfully.
+[2026-10-27 14:26:09] [WARNING] File contains empty values.
+[2026-10-27 14:26:09] [ERROR] File is missing!!!
+[2026-10-27 14:26:12] [SUCCESS] File is valid: test-files/found.txt
+[2026-10-27 14:26:12] [ERROR] File not found: test-files/notfound.txt
+[2026-10-27 14:26:12] [ERROR] File is not readable: test-files/unreadable.txt
+[2026-10-27 14:26:12] [WARNING] File is empty !: test-files/empty.txt
+[2026-10-27 14:26:12] [SUCCESS] File is valid: logs/project.log
+[2026-10-27 14:26:12] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 14:26:12] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 14:26:12] [SUCCESS] Matching data found for: [^a] 
+[2026-10-27 14:26:12] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 14:26:12] [WARNING] No matches found for: [hahaha] 
+[2026-10-27 14:26:12] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 14:26:12] [SUCCESS] File is valid: data/file1.txt
+[2026-10-27 14:26:12] [SUCCESS] File is valid: data/file2.txt
+[2026-10-27 14:26:12] [SUCCESS] File is valid: data/file3.txt
+[2026-10-27 14:26:12] [SUCCESS] Files merged successfully into: output/merged.txt
+[2026-10-27 14:26:12] [SUCCESS] File is valid: test-files/duplicates.txt
+[2026-10-27 14:26:12] [INFO] Original lines: 6
+[2026-10-27 14:26:12] [SUCCESS] Unique lines: 4
+[2026-10-27 14:26:12] [SUCCESS] Duplicates removed: 2
+[2026-10-27 14:27:05] [INFO] Starting data processing...
+[2026-10-27 14:27:05] [SUCCESS] File processed successfully.
+[2026-10-27 14:27:05] [WARNING] File contains empty values.
+[2026-10-27 14:27:05] [ERROR] File is missing!!!
+[2026-10-27 14:27:08] [SUCCESS] File is valid: test-files/found.txt
+[2026-10-27 14:27:08] [ERROR] File not found: test-files/notfound.txt
+[2026-10-27 14:27:08] [ERROR] File is not readable: test-files/unreadable.txt
+[2026-10-27 14:27:08] [WARNING] File is empty !: test-files/empty.txt
+[2026-10-27 14:27:08] [SUCCESS] File is valid: logs/project.log
+[2026-10-27 14:27:08] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 14:27:08] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 14:27:08] [SUCCESS] Matching data found for: [^a] 
+[2026-10-27 14:27:08] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 14:27:08] [WARNING] No matches found for: [hahaha] 
+[2026-10-27 14:27:08] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 14:27:08] [SUCCESS] File is valid: data/file1.txt
+[2026-10-27 14:27:08] [SUCCESS] File is valid: data/file2.txt
+[2026-10-27 14:27:08] [SUCCESS] File is valid: data/file3.txt
+[2026-10-27 14:27:08] [SUCCESS] Files merged successfully into: output/merged.txt
+[2026-10-27 14:27:08] [SUCCESS] File is valid: test-files/duplicates.txt
+[2026-10-27 14:27:08] [INFO] Original lines: 6
+[2026-10-27 14:27:08] [SUCCESS] Unique lines: 4
+[2026-10-27 14:27:08] [SUCCESS] Duplicates removed: 2
+[2026-10-27 14:27:42] [INFO] Starting data processing...
+[2026-10-27 14:27:42] [SUCCESS] File processed successfully.
+[2026-10-27 14:27:42] [WARNING] File contains empty values.
+[2026-10-27 14:27:42] [ERROR] File is missing!!!
+[2026-10-27 14:27:45] [SUCCESS] File is valid: test-files/found.txt
+[2026-10-27 14:27:45] [ERROR] File not found: test-files/notfound.txt
+[2026-10-27 14:27:45] [ERROR] File is not readable: test-files/unreadable.txt
+[2026-10-27 14:27:45] [WARNING] File is empty !: test-files/empty.txt
+[2026-10-27 14:27:45] [SUCCESS] File is valid: logs/project.log
+[2026-10-27 14:27:45] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 14:27:45] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 14:27:45] [SUCCESS] Matching data found for: [^a] 
+[2026-10-27 14:27:45] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 14:27:45] [WARNING] No matches found for: [hahaha] 
+[2026-10-27 14:27:45] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 14:27:45] [SUCCESS] File is valid: data/file1.txt
+[2026-10-27 14:27:45] [SUCCESS] File is valid: data/file2.txt
+[2026-10-27 14:27:45] [SUCCESS] File is valid: data/file3.txt
+[2026-10-27 14:27:45] [SUCCESS] Files merged successfully into: output/merged.txt
+[2026-10-27 14:27:45] [SUCCESS] File is valid: test-files/duplicates.txt
+[2026-10-27 14:27:45] [INFO] Original lines: 6
+[2026-10-27 14:27:45] [SUCCESS] Unique lines: 4
+[2026-10-27 14:27:45] [SUCCESS] Duplicates removed: 2
+[2026-10-27 14:28:05] [INFO] Starting data processing...
+[2026-10-27 14:28:05] [SUCCESS] File processed successfully.
+[2026-10-27 14:28:05] [WARNING] File contains empty values.
+[2026-10-27 14:28:05] [ERROR] File is missing!!!
+[2026-10-27 14:28:08] [SUCCESS] File is valid: test-files/found.txt
+[2026-10-27 14:28:08] [ERROR] File not found: test-files/notfound.txt
+[2026-10-27 14:28:08] [ERROR] File is not readable: test-files/unreadable.txt
+[2026-10-27 14:28:08] [WARNING] File is empty !: test-files/empty.txt
+[2026-10-27 14:28:08] [SUCCESS] File is valid: logs/project.log
+[2026-10-27 14:28:08] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 14:28:08] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 14:28:08] [SUCCESS] Matching data found for: [^a] 
+[2026-10-27 14:28:08] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 14:28:08] [WARNING] No matches found for: [hahaha] 
+[2026-10-27 14:28:08] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 14:28:08] [SUCCESS] File is valid: data/file1.txt
+[2026-10-27 14:28:08] [SUCCESS] File is valid: data/file2.txt
+[2026-10-27 14:28:08] [SUCCESS] File is valid: data/file3.txt
+[2026-10-27 14:28:08] [SUCCESS] Files merged successfully into: output/merged.txt
+[2026-10-27 14:28:08] [SUCCESS] File is valid: test-files/duplicates.txt
+[2026-10-27 14:28:08] [INFO] Original lines: 6
+[2026-10-27 14:28:08] [SUCCESS] Unique lines: 4
+[2026-10-27 14:28:08] [SUCCESS] Duplicates removed: 2
+[2026-10-27 14:28:46] [INFO] Starting data processing...
+[2026-10-27 14:28:46] [SUCCESS] File processed successfully.
+[2026-10-27 14:28:46] [WARNING] File contains empty values.
+[2026-10-27 14:28:46] [ERROR] File is missing!!!
+[2026-10-27 14:28:49] [SUCCESS] File is valid: test-files/found.txt
+[2026-10-27 14:28:49] [ERROR] File not found: test-files/notfound.txt
+[2026-10-27 14:28:49] [ERROR] File is not readable: test-files/unreadable.txt
+[2026-10-27 14:28:49] [WARNING] File is empty !: test-files/empty.txt
+[2026-10-27 14:28:49] [SUCCESS] File is valid: logs/project.log
+[2026-10-27 14:28:49] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 14:28:49] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 14:28:49] [SUCCESS] Matching data found for: [^a] 
+[2026-10-27 14:28:49] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 14:28:49] [WARNING] No matches found for: [hahaha] 
+[2026-10-27 14:28:49] [SUCCESS] File is valid: data/data.csv
+[2026-10-27 14:28:49] [SUCCESS] File is valid: data/file1.txt
+[2026-10-27 14:28:49] [SUCCESS] File is valid: data/file2.txt
+[2026-10-27 14:28:49] [SUCCESS] File is valid: data/file3.txt
+[2026-10-27 14:28:49] [SUCCESS] Files merged successfully into: output/merged.txt
+[2026-10-27 14:28:49] [SUCCESS] File is valid: test-files/duplicates.txt
+[2026-10-27 14:28:49] [INFO] Original lines: 6
+[2026-10-27 14:28:49] [SUCCESS] Unique lines: 4
+[2026-10-27 14:28:49] [SUCCESS] Duplicates removed: 2

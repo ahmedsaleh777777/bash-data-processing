@@ -201,6 +201,28 @@ log_success "Files merged successfully into: $output_file"
 
 }
 
+deduplicate() {
+    local file="$1"
+    local original_count
+    local unique_count
+    local duplicates_removed
+
+    validate_file "$file"
+
+    original_count=$(wc -l < "$file")
+
+    sort -u "$file" > "output/deduplicated.txt"
+
+    unique_count=$(wc -l < "output/deduplicated.txt")
+
+    duplicates_removed=$((original_count - unique_count))
+
+    log_info "Original lines: $original_count"
+    log_success "Unique lines: $unique_count"
+    log_success "Duplicates removed: $duplicates_removed"
+
+}
+
 # Test preparation
 
 prepare_test_files() {
@@ -211,6 +233,15 @@ prepare_test_files() {
     > "test-files/empty.txt"
 
     chmod a-r "test-files/unreadable.txt"
+
+    cat > test-files/duplicates.txt <<'EOF'
+    Linux
+    Docker
+    Linux
+    Kubernetes
+    Docker
+    Git
+EOF
 }
 
 prepare_test_files
@@ -242,3 +273,8 @@ merge_files data/file1.txt data/file2.txt data/file3.txt
 
 cat output/merged.txt
 echo "=============================="
+
+echo "test-files/duplicates.txt:" && cat test-files/duplicates.txt
+deduplicate test-files/duplicates.txt
+echo "=============================="
+
