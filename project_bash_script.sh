@@ -223,6 +223,16 @@ deduplicate() {
 
 }
 
+command_exists() {
+    local command_name="$1"
+    if command -v "$command_name" > /dev/null 2>&1; then
+        log_success "$command_name is installed."
+    else
+        log_error "$command_name is not installed."
+        return 1
+    fi
+}
+
 # Test preparation
 
 prepare_test_files() {
@@ -248,23 +258,23 @@ prepare_test_files
 
 # Temporary tests
 validate_file test-files/found.txt || true
-echo "=============================="
+echo "============================================================"
 validate_file test-files/notfound.txt || true
-echo "=============================="
+echo "============================================================"
 validate_file test-files/unreadable.txt || true
-echo "=============================="
+echo "============================================================"
 validate_file test-files/empty.txt || true
-echo "=============================="
+echo "============================================================"
 count_lines logs/project.log
-echo "=============================="
+echo "============================================================"
 extract_columns data/data.csv 1,2
-echo "=============================="
+echo "============================================================"
 filter_data data/data.csv "^a"
-echo "=============================="
+echo "============================================================"
 filter_data data/data.csv "hahaha" || true
-echo "=============================="
+echo "============================================================"
 calculate_stats "data/data.csv" 5
-echo "=============================="
+echo "============================================================"
 echo "File 1 data" > data/file1.txt
 echo "File 2 data" > data/file2.txt
 echo "File 3 data" > data/file3.txt
@@ -272,9 +282,10 @@ echo "File 3 data" > data/file3.txt
 merge_files data/file1.txt data/file2.txt data/file3.txt
 
 cat output/merged.txt
-echo "=============================="
+echo "============================================================"
 
 echo "test-files/duplicates.txt:" && cat test-files/duplicates.txt
 deduplicate test-files/duplicates.txt
-echo "=============================="
-
+echo "============================================================"
+command_exists awk
+command_exists hahahaha || true
