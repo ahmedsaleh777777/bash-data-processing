@@ -233,8 +233,21 @@ command_exists() {
     fi
 }
 
-# Test preparation
+check_dependencies() {
+    local commands=("awk" "grep" "sort" "wc" "sed" "haha")
+    local cmd
 
+    log_info "Checking dependencies..."
+
+    for cmd in "${commands[@]}"; do
+        command_exists "$cmd"
+    done
+}
+
+# Test preparation
+add_line() {
+    echo "============================================================"
+}
 prepare_test_files() {
     mkdir -p "test-files"
 
@@ -258,34 +271,33 @@ prepare_test_files
 
 # Temporary tests
 validate_file test-files/found.txt || true
-echo "============================================================"
+add_line
 validate_file test-files/notfound.txt || true
-echo "============================================================"
+add_line
 validate_file test-files/unreadable.txt || true
-echo "============================================================"
+add_line
 validate_file test-files/empty.txt || true
-echo "============================================================"
+add_line
 count_lines logs/project.log
-echo "============================================================"
+add_line
 extract_columns data/data.csv 1,2
-echo "============================================================"
+add_line
 filter_data data/data.csv "^a"
-echo "============================================================"
+add_line
 filter_data data/data.csv "hahaha" || true
-echo "============================================================"
+add_line
 calculate_stats "data/data.csv" 5
-echo "============================================================"
+add_line
 echo "File 1 data" > data/file1.txt
 echo "File 2 data" > data/file2.txt
 echo "File 3 data" > data/file3.txt
-
 merge_files data/file1.txt data/file2.txt data/file3.txt
-
 cat output/merged.txt
-echo "============================================================"
-
+add_line
 echo "test-files/duplicates.txt:" && cat test-files/duplicates.txt
 deduplicate test-files/duplicates.txt
-echo "============================================================"
+add_line
 command_exists awk
 command_exists hahahaha || true
+add_line
+check_dependencies
