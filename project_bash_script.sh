@@ -22,8 +22,6 @@ log_info() {
 
 }
 
-log_info "Starting data processing..."
-
 log_success() {
     local message="$1"
     local timestamp
@@ -34,8 +32,6 @@ log_success() {
 
 }
 
-log_success "File processed successfully."
-
 log_warning() {
     local message="$1"
     local timestamp
@@ -45,8 +41,6 @@ log_warning() {
     echo -e "[$timestamp] [WARNING] $message" >> "$LOG_FILE"
 }
 
-log_warning "File contains empty values."
-
 log_error() {
     local message="$1"
     local timestamp
@@ -55,8 +49,6 @@ log_error() {
     echo -e "${RED}[$timestamp] [ERROR] ${NC} $message " 
     echo -e "[$timestamp] [ERROR] $message" >> "$LOG_FILE"
 }
-
-log_error "File is missing!!!"
 
 # Error handling
 
@@ -234,7 +226,7 @@ command_exists() {
 }
 
 check_dependencies() {
-    local commands=("awk" "grep" "sort" "wc" "sed" "haha")
+    local commands=("awk" "grep" "sort" "wc" "sed")
     local cmd
 
     log_info "Checking dependencies..."
@@ -244,10 +236,36 @@ check_dependencies() {
     done
 }
 
+init_directories() {
+    log_info "Initializing directories..."
+
+    mkdir -p data output logs
+
+    log_success "Required directories are ready."
+}
+
+show_menu() {
+    echo "========================================"
+    echo "     Bash Data Processing Toolkit"
+    echo "========================================"
+    echo
+    echo "1. Count Lines"
+    echo "2. Extract CSV Columns"
+    echo "3. Filter Data"
+    echo "4. Calculate Statistics"
+    echo "5. Merge Files"
+    echo "6. Remove Duplicates"
+    echo "7. Check Dependencies"
+    echo "8. Initialize Directories"
+    echo "9. Exit"
+    echo
+}
+
 # Test preparation
 add_line() {
     echo "============================================================"
 }
+
 prepare_test_files() {
     mkdir -p "test-files"
 
@@ -269,35 +287,47 @@ EOF
 
 prepare_test_files
 
+add_line
+log_info "Starting data processing..."
+log_success "File processed successfully."
+log_warning "File contains empty values."
+log_error "File is missing!!!"
+add_line
 # Temporary tests
+init_directories
+add_line #14
 validate_file test-files/found.txt || true
-add_line
+add_line #1
 validate_file test-files/notfound.txt || true
-add_line
+add_line #2
 validate_file test-files/unreadable.txt || true
-add_line
+add_line #3
 validate_file test-files/empty.txt || true
-add_line
+add_line #4
 count_lines logs/project.log
-add_line
+add_line #5
 extract_columns data/data.csv 1,2
-add_line
+add_line #6
 filter_data data/data.csv "^a"
-add_line
+add_line #7
 filter_data data/data.csv "hahaha" || true
-add_line
+add_line #8
 calculate_stats "data/data.csv" 5
-add_line
+add_line #9
 echo "File 1 data" > data/file1.txt
 echo "File 2 data" > data/file2.txt
 echo "File 3 data" > data/file3.txt
 merge_files data/file1.txt data/file2.txt data/file3.txt
 cat output/merged.txt
-add_line
+add_line #10
 echo "test-files/duplicates.txt:" && cat test-files/duplicates.txt
 deduplicate test-files/duplicates.txt
-add_line
+add_line #11
 command_exists awk
 command_exists hahahaha || true
-add_line
+add_line #12
 check_dependencies
+add_line #13
+
+show_menu
+add_line #14

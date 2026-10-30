@@ -668,3 +668,338 @@
 [2026-10-29 04:50:34] [SUCCESS] wc is installed.
 [2026-10-29 04:50:34] [SUCCESS] sed is installed.
 [2026-10-29 04:50:34] [ERROR] haha is not installed.
+[2026-10-30 20:09:35] [INFO] Starting data processing...
+[2026-10-30 20:09:35] [SUCCESS] File processed successfully.
+[2026-10-30 20:09:35] [WARNING] File contains empty values.
+[2026-10-30 20:09:35] [ERROR] File is missing!!!
+[2026-10-30 20:09:38] [SUCCESS] File is valid: test-files/found.txt
+[2026-10-30 20:09:38] [ERROR] File not found: test-files/notfound.txt
+[2026-10-30 20:09:38] [ERROR] File is not readable: test-files/unreadable.txt
+[2026-10-30 20:09:38] [WARNING] File is empty !: test-files/empty.txt
+[2026-10-30 20:09:38] [SUCCESS] File is valid: logs/project.log
+[2026-10-30 20:09:38] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:09:38] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:09:38] [SUCCESS] Matching data found for: [^a] 
+[2026-10-30 20:09:38] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:09:38] [WARNING] No matches found for: [hahaha] 
+[2026-10-30 20:09:38] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:09:38] [SUCCESS] File is valid: data/file1.txt
+[2026-10-30 20:09:38] [SUCCESS] File is valid: data/file2.txt
+[2026-10-30 20:09:38] [SUCCESS] File is valid: data/file3.txt
+[2026-10-30 20:09:38] [SUCCESS] Files merged successfully into: output/merged.txt
+[2026-10-30 20:09:38] [SUCCESS] File is valid: test-files/duplicates.txt
+[2026-10-30 20:09:38] [INFO] Original lines: 6
+[2026-10-30 20:09:38] [SUCCESS] Unique lines: 4
+[2026-10-30 20:09:38] [SUCCESS] Duplicates removed: 2
+[2026-10-30 20:09:38] [SUCCESS] awk is installed.
+[2026-10-30 20:09:38] [ERROR] hahahaha is not installed.
+[2026-10-30 20:09:38] [INFO] Checking dependencies...
+[2026-10-30 20:09:38] [SUCCESS] awk is installed.
+[2026-10-30 20:09:38] [SUCCESS] grep is installed.
+[2026-10-30 20:09:38] [SUCCESS] sort is installed.
+[2026-10-30 20:09:38] [SUCCESS] wc is installed.
+[2026-10-30 20:09:38] [SUCCESS] sed is installed.
+[2026-10-30 20:09:38] [ERROR] haha is not installed.
+[2026-10-30 20:12:44] [INFO] Starting data processing...
+[2026-10-30 20:12:44] [SUCCESS] File processed successfully.
+[2026-10-30 20:12:44] [WARNING] File contains empty values.
+[2026-10-30 20:12:44] [ERROR] File is missing!!!
+[2026-10-30 20:12:47] [SUCCESS] File is valid: test-files/found.txt
+[2026-10-30 20:12:47] [ERROR] File not found: test-files/notfound.txt
+[2026-10-30 20:12:47] [ERROR] File is not readable: test-files/unreadable.txt
+[2026-10-30 20:12:47] [WARNING] File is empty !: test-files/empty.txt
+[2026-10-30 20:12:47] [SUCCESS] File is valid: logs/project.log
+[2026-10-30 20:12:47] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:12:47] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:12:47] [SUCCESS] Matching data found for: [^a] 
+[2026-10-30 20:12:47] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:12:47] [WARNING] No matches found for: [hahaha] 
+[2026-10-30 20:12:47] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:12:47] [SUCCESS] File is valid: data/file1.txt
+[2026-10-30 20:12:47] [SUCCESS] File is valid: data/file2.txt
+[2026-10-30 20:12:47] [SUCCESS] File is valid: data/file3.txt
+[2026-10-30 20:12:47] [SUCCESS] Files merged successfully into: output/merged.txt
+[2026-10-30 20:12:47] [SUCCESS] File is valid: test-files/duplicates.txt
+[2026-10-30 20:12:47] [INFO] Original lines: 6
+[2026-10-30 20:12:47] [SUCCESS] Unique lines: 4
+[2026-10-30 20:12:47] [SUCCESS] Duplicates removed: 2
+[2026-10-30 20:12:47] [SUCCESS] awk is installed.
+[2026-10-30 20:12:47] [ERROR] hahahaha is not installed.
+[2026-10-30 20:12:47] [INFO] Checking dependencies...
+[2026-10-30 20:12:47] [SUCCESS] awk is installed.
+[2026-10-30 20:12:47] [SUCCESS] grep is installed.
+[2026-10-30 20:12:47] [SUCCESS] sort is installed.
+[2026-10-30 20:12:47] [SUCCESS] wc is installed.
+[2026-10-30 20:12:47] [SUCCESS] sed is installed.
+[2026-10-30 20:12:47] [ERROR] haha is not installed.
+[2026-10-30 20:18:30] [INFO] Starting data processing...
+[2026-10-30 20:18:30] [SUCCESS] File processed successfully.
+[2026-10-30 20:18:30] [WARNING] File contains empty values.
+[2026-10-30 20:18:30] [ERROR] File is missing!!!
+[2026-10-30 20:18:33] [INFO] Initializing directories...
+[2026-10-30 20:18:33] [SUCCESS] Required directories are ready.
+[2026-10-30 20:18:33] [SUCCESS] File is valid: test-files/found.txt
+[2026-10-30 20:18:33] [ERROR] File not found: test-files/notfound.txt
+[2026-10-30 20:18:33] [ERROR] File is not readable: test-files/unreadable.txt
+[2026-10-30 20:18:33] [WARNING] File is empty !: test-files/empty.txt
+[2026-10-30 20:18:33] [SUCCESS] File is valid: logs/project.log
+[2026-10-30 20:18:33] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:18:34] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:18:34] [SUCCESS] Matching data found for: [^a] 
+[2026-10-30 20:18:34] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:18:34] [WARNING] No matches found for: [hahaha] 
+[2026-10-30 20:18:34] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:18:34] [SUCCESS] File is valid: data/file1.txt
+[2026-10-30 20:18:34] [SUCCESS] File is valid: data/file2.txt
+[2026-10-30 20:18:34] [SUCCESS] File is valid: data/file3.txt
+[2026-10-30 20:18:34] [SUCCESS] Files merged successfully into: output/merged.txt
+[2026-10-30 20:18:34] [SUCCESS] File is valid: test-files/duplicates.txt
+[2026-10-30 20:18:34] [INFO] Original lines: 6
+[2026-10-30 20:18:34] [SUCCESS] Unique lines: 4
+[2026-10-30 20:18:34] [SUCCESS] Duplicates removed: 2
+[2026-10-30 20:18:34] [SUCCESS] awk is installed.
+[2026-10-30 20:18:34] [ERROR] hahahaha is not installed.
+[2026-10-30 20:18:34] [INFO] Checking dependencies...
+[2026-10-30 20:18:34] [SUCCESS] awk is installed.
+[2026-10-30 20:18:34] [SUCCESS] grep is installed.
+[2026-10-30 20:18:34] [SUCCESS] sort is installed.
+[2026-10-30 20:18:34] [SUCCESS] wc is installed.
+[2026-10-30 20:18:34] [SUCCESS] sed is installed.
+[2026-10-30 20:18:34] [ERROR] haha is not installed.
+[2026-10-30 20:20:57] [INFO] Starting data processing...
+[2026-10-30 20:20:57] [SUCCESS] File processed successfully.
+[2026-10-30 20:20:57] [WARNING] File contains empty values.
+[2026-10-30 20:20:57] [ERROR] File is missing!!!
+[2026-10-30 20:20:57] [INFO] Initializing directories...
+[2026-10-30 20:20:57] [SUCCESS] Required directories are ready.
+[2026-10-30 20:20:57] [SUCCESS] File is valid: test-files/found.txt
+[2026-10-30 20:20:57] [ERROR] File not found: test-files/notfound.txt
+[2026-10-30 20:20:57] [ERROR] File is not readable: test-files/unreadable.txt
+[2026-10-30 20:20:57] [WARNING] File is empty !: test-files/empty.txt
+[2026-10-30 20:20:57] [SUCCESS] File is valid: logs/project.log
+[2026-10-30 20:20:57] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:20:57] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:20:57] [SUCCESS] Matching data found for: [^a] 
+[2026-10-30 20:20:57] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:20:57] [WARNING] No matches found for: [hahaha] 
+[2026-10-30 20:20:57] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:20:57] [SUCCESS] File is valid: data/file1.txt
+[2026-10-30 20:20:57] [SUCCESS] File is valid: data/file2.txt
+[2026-10-30 20:20:57] [SUCCESS] File is valid: data/file3.txt
+[2026-10-30 20:20:57] [SUCCESS] Files merged successfully into: output/merged.txt
+[2026-10-30 20:20:57] [SUCCESS] File is valid: test-files/duplicates.txt
+[2026-10-30 20:20:57] [INFO] Original lines: 6
+[2026-10-30 20:20:57] [SUCCESS] Unique lines: 4
+[2026-10-30 20:20:57] [SUCCESS] Duplicates removed: 2
+[2026-10-30 20:20:57] [SUCCESS] awk is installed.
+[2026-10-30 20:20:57] [ERROR] hahahaha is not installed.
+[2026-10-30 20:20:57] [INFO] Checking dependencies...
+[2026-10-30 20:20:57] [SUCCESS] awk is installed.
+[2026-10-30 20:20:57] [SUCCESS] grep is installed.
+[2026-10-30 20:20:57] [SUCCESS] sort is installed.
+[2026-10-30 20:20:57] [SUCCESS] wc is installed.
+[2026-10-30 20:20:57] [SUCCESS] sed is installed.
+[2026-10-30 20:20:57] [ERROR] haha is not installed.
+[2026-10-30 20:21:54] [INFO] Starting data processing...
+[2026-10-30 20:21:54] [SUCCESS] File processed successfully.
+[2026-10-30 20:21:54] [WARNING] File contains empty values.
+[2026-10-30 20:21:54] [ERROR] File is missing!!!
+[2026-10-30 20:21:54] [INFO] Initializing directories...
+[2026-10-30 20:21:54] [SUCCESS] Required directories are ready.
+[2026-10-30 20:21:54] [SUCCESS] File is valid: test-files/found.txt
+[2026-10-30 20:21:54] [ERROR] File not found: test-files/notfound.txt
+[2026-10-30 20:21:54] [ERROR] File is not readable: test-files/unreadable.txt
+[2026-10-30 20:21:54] [WARNING] File is empty !: test-files/empty.txt
+[2026-10-30 20:21:54] [SUCCESS] File is valid: logs/project.log
+[2026-10-30 20:21:54] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:21:54] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:21:54] [SUCCESS] Matching data found for: [^a] 
+[2026-10-30 20:21:54] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:21:54] [WARNING] No matches found for: [hahaha] 
+[2026-10-30 20:21:54] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:21:54] [SUCCESS] File is valid: data/file1.txt
+[2026-10-30 20:21:54] [SUCCESS] File is valid: data/file2.txt
+[2026-10-30 20:21:54] [SUCCESS] File is valid: data/file3.txt
+[2026-10-30 20:21:54] [SUCCESS] Files merged successfully into: output/merged.txt
+[2026-10-30 20:21:54] [SUCCESS] File is valid: test-files/duplicates.txt
+[2026-10-30 20:21:54] [INFO] Original lines: 6
+[2026-10-30 20:21:54] [SUCCESS] Unique lines: 4
+[2026-10-30 20:21:54] [SUCCESS] Duplicates removed: 2
+[2026-10-30 20:21:54] [SUCCESS] awk is installed.
+[2026-10-30 20:21:54] [ERROR] hahahaha is not installed.
+[2026-10-30 20:21:54] [INFO] Checking dependencies...
+[2026-10-30 20:21:54] [SUCCESS] awk is installed.
+[2026-10-30 20:21:54] [SUCCESS] grep is installed.
+[2026-10-30 20:21:54] [SUCCESS] sort is installed.
+[2026-10-30 20:21:54] [SUCCESS] wc is installed.
+[2026-10-30 20:21:54] [SUCCESS] sed is installed.
+[2026-10-30 20:21:54] [ERROR] haha is not installed.
+[2026-10-30 20:26:08] [INFO] Starting data processing...
+[2026-10-30 20:26:08] [SUCCESS] File processed successfully.
+[2026-10-30 20:26:08] [WARNING] File contains empty values.
+[2026-10-30 20:26:08] [ERROR] File is missing!!!
+[2026-10-30 20:26:08] [INFO] Initializing directories...
+[2026-10-30 20:26:08] [SUCCESS] Required directories are ready.
+[2026-10-30 20:26:08] [SUCCESS] File is valid: test-files/found.txt
+[2026-10-30 20:26:08] [ERROR] File not found: test-files/notfound.txt
+[2026-10-30 20:26:08] [ERROR] File is not readable: test-files/unreadable.txt
+[2026-10-30 20:26:08] [WARNING] File is empty !: test-files/empty.txt
+[2026-10-30 20:26:08] [SUCCESS] File is valid: logs/project.log
+[2026-10-30 20:26:08] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:26:08] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:26:08] [SUCCESS] Matching data found for: [^a] 
+[2026-10-30 20:26:08] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:26:08] [WARNING] No matches found for: [hahaha] 
+[2026-10-30 20:26:08] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:26:08] [SUCCESS] File is valid: data/file1.txt
+[2026-10-30 20:26:08] [SUCCESS] File is valid: data/file2.txt
+[2026-10-30 20:26:08] [SUCCESS] File is valid: data/file3.txt
+[2026-10-30 20:26:08] [SUCCESS] Files merged successfully into: output/merged.txt
+[2026-10-30 20:26:08] [SUCCESS] File is valid: test-files/duplicates.txt
+[2026-10-30 20:26:08] [INFO] Original lines: 6
+[2026-10-30 20:26:08] [SUCCESS] Unique lines: 4
+[2026-10-30 20:26:08] [SUCCESS] Duplicates removed: 2
+[2026-10-30 20:26:08] [SUCCESS] awk is installed.
+[2026-10-30 20:26:08] [ERROR] hahahaha is not installed.
+[2026-10-30 20:26:08] [INFO] Checking dependencies...
+[2026-10-30 20:26:08] [SUCCESS] awk is installed.
+[2026-10-30 20:26:08] [SUCCESS] grep is installed.
+[2026-10-30 20:26:08] [SUCCESS] sort is installed.
+[2026-10-30 20:26:08] [SUCCESS] wc is installed.
+[2026-10-30 20:26:08] [SUCCESS] sed is installed.
+[2026-10-30 20:26:08] [ERROR] haha is not installed.
+[2026-10-30 20:26:27] [INFO] Starting data processing...
+[2026-10-30 20:26:27] [SUCCESS] File processed successfully.
+[2026-10-30 20:26:27] [WARNING] File contains empty values.
+[2026-10-30 20:26:27] [ERROR] File is missing!!!
+[2026-10-30 20:26:27] [INFO] Initializing directories...
+[2026-10-30 20:26:27] [SUCCESS] Required directories are ready.
+[2026-10-30 20:26:27] [SUCCESS] File is valid: test-files/found.txt
+[2026-10-30 20:26:27] [ERROR] File not found: test-files/notfound.txt
+[2026-10-30 20:26:27] [ERROR] File is not readable: test-files/unreadable.txt
+[2026-10-30 20:26:27] [WARNING] File is empty !: test-files/empty.txt
+[2026-10-30 20:26:27] [SUCCESS] File is valid: logs/project.log
+[2026-10-30 20:26:27] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:26:27] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:26:27] [SUCCESS] Matching data found for: [^a] 
+[2026-10-30 20:26:27] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:26:27] [WARNING] No matches found for: [hahaha] 
+[2026-10-30 20:26:27] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:26:27] [SUCCESS] File is valid: data/file1.txt
+[2026-10-30 20:26:27] [SUCCESS] File is valid: data/file2.txt
+[2026-10-30 20:26:27] [SUCCESS] File is valid: data/file3.txt
+[2026-10-30 20:26:27] [SUCCESS] Files merged successfully into: output/merged.txt
+[2026-10-30 20:26:27] [SUCCESS] File is valid: test-files/duplicates.txt
+[2026-10-30 20:26:27] [INFO] Original lines: 6
+[2026-10-30 20:26:27] [SUCCESS] Unique lines: 4
+[2026-10-30 20:26:27] [SUCCESS] Duplicates removed: 2
+[2026-10-30 20:26:27] [SUCCESS] awk is installed.
+[2026-10-30 20:26:27] [ERROR] hahahaha is not installed.
+[2026-10-30 20:26:27] [INFO] Checking dependencies...
+[2026-10-30 20:26:27] [SUCCESS] awk is installed.
+[2026-10-30 20:26:27] [SUCCESS] grep is installed.
+[2026-10-30 20:26:27] [SUCCESS] sort is installed.
+[2026-10-30 20:26:27] [SUCCESS] wc is installed.
+[2026-10-30 20:26:27] [SUCCESS] sed is installed.
+[2026-10-30 20:26:27] [ERROR] haha is not installed.
+[2026-10-30 20:26:52] [INFO] Starting data processing...
+[2026-10-30 20:26:52] [SUCCESS] File processed successfully.
+[2026-10-30 20:26:52] [WARNING] File contains empty values.
+[2026-10-30 20:26:52] [ERROR] File is missing!!!
+[2026-10-30 20:26:52] [INFO] Initializing directories...
+[2026-10-30 20:26:52] [SUCCESS] Required directories are ready.
+[2026-10-30 20:26:52] [SUCCESS] File is valid: test-files/found.txt
+[2026-10-30 20:26:52] [ERROR] File not found: test-files/notfound.txt
+[2026-10-30 20:26:52] [ERROR] File is not readable: test-files/unreadable.txt
+[2026-10-30 20:26:52] [WARNING] File is empty !: test-files/empty.txt
+[2026-10-30 20:26:52] [SUCCESS] File is valid: logs/project.log
+[2026-10-30 20:26:52] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:26:52] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:26:52] [SUCCESS] Matching data found for: [^a] 
+[2026-10-30 20:26:52] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:26:52] [WARNING] No matches found for: [hahaha] 
+[2026-10-30 20:26:52] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:26:52] [SUCCESS] File is valid: data/file1.txt
+[2026-10-30 20:26:52] [SUCCESS] File is valid: data/file2.txt
+[2026-10-30 20:26:52] [SUCCESS] File is valid: data/file3.txt
+[2026-10-30 20:26:52] [SUCCESS] Files merged successfully into: output/merged.txt
+[2026-10-30 20:26:52] [SUCCESS] File is valid: test-files/duplicates.txt
+[2026-10-30 20:26:53] [INFO] Original lines: 6
+[2026-10-30 20:26:53] [SUCCESS] Unique lines: 4
+[2026-10-30 20:26:53] [SUCCESS] Duplicates removed: 2
+[2026-10-30 20:26:53] [SUCCESS] awk is installed.
+[2026-10-30 20:26:53] [ERROR] hahahaha is not installed.
+[2026-10-30 20:26:53] [INFO] Checking dependencies...
+[2026-10-30 20:26:53] [SUCCESS] awk is installed.
+[2026-10-30 20:26:53] [SUCCESS] grep is installed.
+[2026-10-30 20:26:53] [SUCCESS] sort is installed.
+[2026-10-30 20:26:53] [SUCCESS] wc is installed.
+[2026-10-30 20:26:53] [SUCCESS] sed is installed.
+[2026-10-30 20:26:53] [ERROR] haha is not installed.
+[2026-10-30 20:27:44] [INFO] Starting data processing...
+[2026-10-30 20:27:44] [SUCCESS] File processed successfully.
+[2026-10-30 20:27:44] [WARNING] File contains empty values.
+[2026-10-30 20:27:44] [ERROR] File is missing!!!
+[2026-10-30 20:27:44] [INFO] Initializing directories...
+[2026-10-30 20:27:44] [SUCCESS] Required directories are ready.
+[2026-10-30 20:27:44] [SUCCESS] File is valid: test-files/found.txt
+[2026-10-30 20:27:44] [ERROR] File not found: test-files/notfound.txt
+[2026-10-30 20:27:44] [ERROR] File is not readable: test-files/unreadable.txt
+[2026-10-30 20:27:44] [WARNING] File is empty !: test-files/empty.txt
+[2026-10-30 20:27:44] [SUCCESS] File is valid: logs/project.log
+[2026-10-30 20:27:44] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:27:44] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:27:44] [SUCCESS] Matching data found for: [^a] 
+[2026-10-30 20:27:44] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:27:44] [WARNING] No matches found for: [hahaha] 
+[2026-10-30 20:27:44] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:27:44] [SUCCESS] File is valid: data/file1.txt
+[2026-10-30 20:27:44] [SUCCESS] File is valid: data/file2.txt
+[2026-10-30 20:27:44] [SUCCESS] File is valid: data/file3.txt
+[2026-10-30 20:27:44] [SUCCESS] Files merged successfully into: output/merged.txt
+[2026-10-30 20:27:44] [SUCCESS] File is valid: test-files/duplicates.txt
+[2026-10-30 20:27:44] [INFO] Original lines: 6
+[2026-10-30 20:27:44] [SUCCESS] Unique lines: 4
+[2026-10-30 20:27:44] [SUCCESS] Duplicates removed: 2
+[2026-10-30 20:27:44] [SUCCESS] awk is installed.
+[2026-10-30 20:27:44] [ERROR] hahahaha is not installed.
+[2026-10-30 20:27:44] [INFO] Checking dependencies...
+[2026-10-30 20:27:44] [SUCCESS] awk is installed.
+[2026-10-30 20:27:44] [SUCCESS] grep is installed.
+[2026-10-30 20:27:44] [SUCCESS] sort is installed.
+[2026-10-30 20:27:44] [SUCCESS] wc is installed.
+[2026-10-30 20:27:44] [SUCCESS] sed is installed.
+[2026-10-30 20:27:44] [ERROR] haha is not installed.
+[2026-10-30 20:32:13] [INFO] Starting data processing...
+[2026-10-30 20:32:13] [SUCCESS] File processed successfully.
+[2026-10-30 20:32:13] [WARNING] File contains empty values.
+[2026-10-30 20:32:13] [ERROR] File is missing!!!
+[2026-10-30 20:32:13] [INFO] Initializing directories...
+[2026-10-30 20:32:13] [SUCCESS] Required directories are ready.
+[2026-10-30 20:32:13] [SUCCESS] File is valid: test-files/found.txt
+[2026-10-30 20:32:13] [ERROR] File not found: test-files/notfound.txt
+[2026-10-30 20:32:13] [ERROR] File is not readable: test-files/unreadable.txt
+[2026-10-30 20:32:13] [WARNING] File is empty !: test-files/empty.txt
+[2026-10-30 20:32:13] [SUCCESS] File is valid: logs/project.log
+[2026-10-30 20:32:13] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:32:13] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:32:13] [SUCCESS] Matching data found for: [^a] 
+[2026-10-30 20:32:13] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:32:13] [WARNING] No matches found for: [hahaha] 
+[2026-10-30 20:32:13] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:32:13] [SUCCESS] File is valid: data/file1.txt
+[2026-10-30 20:32:13] [SUCCESS] File is valid: data/file2.txt
+[2026-10-30 20:32:13] [SUCCESS] File is valid: data/file3.txt
+[2026-10-30 20:32:13] [SUCCESS] Files merged successfully into: output/merged.txt
+[2026-10-30 20:32:13] [SUCCESS] File is valid: test-files/duplicates.txt
+[2026-10-30 20:32:13] [INFO] Original lines: 6
+[2026-10-30 20:32:13] [SUCCESS] Unique lines: 4
+[2026-10-30 20:32:13] [SUCCESS] Duplicates removed: 2
+[2026-10-30 20:32:13] [SUCCESS] awk is installed.
+[2026-10-30 20:32:13] [ERROR] hahahaha is not installed.
+[2026-10-30 20:32:13] [INFO] Checking dependencies...
+[2026-10-30 20:32:13] [SUCCESS] awk is installed.
+[2026-10-30 20:32:13] [SUCCESS] grep is installed.
+[2026-10-30 20:32:13] [SUCCESS] sort is installed.
+[2026-10-30 20:32:13] [SUCCESS] wc is installed.
+[2026-10-30 20:32:13] [SUCCESS] sed is installed.
