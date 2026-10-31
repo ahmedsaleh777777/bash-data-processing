@@ -84,3 +84,24 @@
 [2026-10-31 12:20:48] [SUCCESS] Command sed is installed.
 [2026-10-31 12:20:48] [SUCCESS] All required dependencies are installed.
 [2026-10-31 12:21:25] [INFO] Exiting...
+[2026-10-31 13:27:49] [INFO] Initializing directories...
+[2026-10-31 13:27:49] [SUCCESS] Required directories are ready.
+[2026-10-31 13:28:07] [SUCCESS] File is valid: logs/project.log
+[2026-10-31 13:28:07] [INFO] Counting lines in: logs/project.log
+[2026-10-31 13:28:07] [SUCCESS] Line count completed successfully.
+[2026-10-31 13:28:16] [ERROR] File not found: logs/logs
+[2026-10-31 13:29:01] [SUCCESS] File is valid: data/data.csv
+[2026-10-31 13:29:01] [INFO] Extracting columns: 5 from data/data.csv
+[2026-10-31 13:29:01] [SUCCESS] Column extraction completed successfully.
+[2026-10-31 13:30:02] [SUCCESS] File is valid: data/data.csv
+[2026-10-31 13:30:02] [INFO] Filtering data in data/data.csv using pattern: [ahm]
+[2026-10-31 13:30:02] [SUCCESS] Filtering completed successfully.
+[2026-10-31 13:30:24] [SUCCESS] File is valid: data/data.csv
+[2026-10-31 13:30:24] [INFO] Calculating statistics for column [5] in data/data.csv
+[2026-10-31 13:30:24] [SUCCESS] Statistics calculation completed successfully.
+[2026-10-31 13:30:50] [SUCCESS] File is valid: data/file1.txt
+[2026-10-31 13:30:50] [INFO] Merging 1 files...
+[2026-10-31 13:30:50] [SUCCESS] Files merged successfully into: output/merged.txt
+[2026-10-31 13:31:05] [ERROR] File not found: 
+[2026-10-31 13:31:06] [ERROR] Invalid option. Please enter a number between 1 and 9.
+[2026-10-31 13:31:08] [INFO] Exiting...

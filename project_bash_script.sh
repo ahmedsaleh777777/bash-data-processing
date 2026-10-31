@@ -18,7 +18,7 @@ log_info() {
     timestamp=$(date '+%Y-%m-%d %H:%M:%S')
 
     echo -e "${BLUE}[$timestamp] [INFO] ${NC} $message "
-    echo -e "[$timestamp] [INFO] $message" >> "$LOG_FILE"
+    echo "[$timestamp] [INFO] $message" >> "$LOG_FILE"
 
 }
 
@@ -28,7 +28,7 @@ log_success() {
     timestamp=$(date '+%Y-%m-%d %H:%M:%S')
 
     echo -e "${GREEN}[$timestamp] [SUCCESS] ${NC} $message "
-    echo -e "[$timestamp] [SUCCESS] $message" >> "$LOG_FILE"
+    echo "[$timestamp] [SUCCESS] $message" >> "$LOG_FILE"
 
 }
 
@@ -38,7 +38,7 @@ log_warning() {
     timestamp=$(date '+%Y-%m-%d %H:%M:%S')
 
     echo -e "${YELLOW}[$timestamp] [WARNING] ${NC} $message" 
-    echo -e "[$timestamp] [WARNING] $message" >> "$LOG_FILE"
+    echo "[$timestamp] [WARNING] $message" >> "$LOG_FILE"
 }
 
 log_error() {
@@ -47,7 +47,7 @@ log_error() {
     timestamp=$(date '+%Y-%m-%d %H:%M:%S')
 
     echo -e "${RED}[$timestamp] [ERROR] ${NC} $message " 
-    echo -e "[$timestamp] [ERROR] $message" >> "$LOG_FILE"
+    echo "[$timestamp] [ERROR] $message" >> "$LOG_FILE"
 }
 
 # Error handling
@@ -65,21 +65,21 @@ validate_file() {
     local file="$1"
 
     if [[ ! -f "$file" ]]; then
-    log_error "File not found: $file"
-    return 1
+        log_error "File not found: $file"
+        return 1
     fi
 
     if [[ ! -r "$file" ]]; then
-    log_error "File is not readable: $file"
-    return 1
+        log_error "File is not readable: $file"
+        return 1
     fi
 
     if [[ ! -s "$file" ]]; then
-    log_warning "File is empty !: $file"
-    return 1
+        log_warning "File is empty !: $file"
+        return 1
     fi
 
-     log_success "File is valid: $file"
+    log_success "File is valid: $file"
     return 0
 }
 
@@ -102,30 +102,45 @@ count_lines() {
 extract_columns() {
     local file="$1"
     local columns="$2"
+    local total_columns
+    local column_number
+    local selected_columns
 
     if ! validate_file "$file"; then
         return 1
     fi
 
     if [[ ! "$columns" =~ ^[0-9]+(,[0-9]+)*$ ]]; then
-        log_error "Invalid column format: $columns Use format like: 1,3,5"
-        return 1    
-    fi    
+        log_error "Invalid column format: $columns. Use format like: 1,3,5"
+        return 1
+    fi
+
+    total_columns=$(awk -F',' 'NR == 1 { print NF; exit }' "$file")
+
+    IFS=',' read -ra selected_columns <<< "$columns"
+
+    for column_number in "${selected_columns[@]}"; do
+        if (( column_number < 1 || column_number > total_columns )); then
+            log_error "Invalid column number: $column_number. File has $total_columns columns."
+            return 1
+        fi
+    done
 
     log_info "Extracting columns: $columns from $file"
 
     awk -F',' -v cols="$columns" '
     BEGIN {
-     count = split(cols, arr, ",")
-      }
+        count = split(cols, arr, ",")
+    }
 
-        {
-            for (i=1; i <= count; i++) {
-                printf "%s ", $arr[i]
-            }
-            print ""
+    NF > 0 {
+        for (i = 1; i <= count; i++) {
+            printf "%s ", $arr[i]
         }
-        ' "$file"
+        print ""
+    }
+    ' "$file"
+
     log_success "Column extraction completed successfully."
 }
 
@@ -137,10 +152,9 @@ filter_data() {
             return 1
         fi
 
-    log_info "Filrering data in $file using pattern: [$pattern]"
+        log_info "Filtering data in $file using pattern: [$pattern]"
 
-
-        if grep -i "$pattern" "$file"; then
+        if grep -i -- "$pattern" "$file"; then
             log_success "Filtering completed successfully."
         else
             log_warning "No matches found for: [$pattern] "
@@ -152,33 +166,39 @@ calculate_stats() {
     local file="$1"
     local column="$2"
 
-        if ! validate_file "$file"; then
-            return 1
-        fi
+    if ! validate_file "$file"; then
+        return 1
+    fi
 
-        if [[ ! "$column" =~ ^[0-9]+$ ]]; then
-            log_error "Invalid column format: $column Use format like: 1,3,5"
-            return 1    
-        fi
+    if [[ ! "$column" =~ ^[0-9]+$ ]]; then
+        log_error "Invalid column number: $column. Enter a single column number like: 5"
+        return 1
+    fi
 
-    log_info "calculating data in $file using column: [$column]"
-    
-    awk -F',' -v col="$column" '
+    log_info "Calculating statistics for column [$column] in $file"
+
+    if awk -F',' -v col="$column" '
     NR > 1 && $col != "" {
         value = $col
 
         if (count == 0 || value < min) {
-        min = value
+            min = value
         }
 
         if (count == 0 || value > max) {
-        max = value
+            max = value
         }
+
         sum += value
         count++
     }
 
     END {
+        if (count == 0) {
+            print "No numeric data found."
+            exit 1
+        }
+
         print "----------------"
         print "Statistics"
         print "----------------"
@@ -187,11 +207,13 @@ calculate_stats() {
         print "Max    :", max
         print "Average:", sum / count
     }
-    ' "$file"
+    ' "$file"; then
 
-    log_success "Column calculating completed successfully."
-
-
+        log_success "Statistics calculation completed successfully."
+    else
+        log_error "Statistics calculation failed."
+        return 1
+    fi
 }
 
 merge_files() {
@@ -205,7 +227,7 @@ merge_files() {
             fi
     done
 
-    log_info "Merging ${#@} files..."
+    log_info "Merging $# files..."
 
     cat "$@" > "$output_file"
 
