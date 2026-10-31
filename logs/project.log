@@ -1121,3 +1121,10 @@
 [2026-10-31 02:43:26] [SUCCESS] Required directories are ready.
 [2026-10-31 02:43:31] [ERROR] File not found: log/log
 [2026-10-31 02:43:51] [SUCCESS] File is valid: logs/project.log
+[2026-10-31 09:53:14] [INFO] Initializing directories...
+[2026-10-31 09:53:14] [SUCCESS] Required directories are ready.
+[2026-10-31 09:53:16] [ERROR] Invalid choice. Please enter a number between 1 and 9.
+[2026-10-31 09:57:45] [INFO] Initializing directories...
+[2026-10-31 09:57:45] [SUCCESS] Required directories are ready.
+[2026-10-31 09:57:48] [ERROR] Invalid option. Please enter a number between 1 and 9.
+[2026-10-31 09:57:53] [ERROR] Invalid choice.

@@ -278,6 +278,13 @@ while true; do
 
     read -p "Choose an option: " choice
 
+        if [[ ! "$choice" =~ ^[0-9]+$ ]]; then
+            log_error "Invalid option. Please enter a number between 1 and 9."
+            echo
+            read -p "Press Enter to continue..."
+            continue
+        fi
+
     case "$choice" in
 
         1)
@@ -332,7 +339,7 @@ while true; do
             ;;
 
         *)
-            log_error "Invalid choice. Please enter a number between 1 and 9."
+            log_error "Invalid choice."
             ;;
 
     esac
