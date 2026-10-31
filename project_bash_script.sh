@@ -90,9 +90,13 @@ count_lines() {
 
     if ! validate_file "$file"; then
         return 1
-        fi
+    
+    fi
+    log_info "Counting lines in: $file"
+    
+    wc -l "$file"
 
-     wc -l "$file"
+    log_success "Line count completed successfully."
 }
 
 extract_columns() {
@@ -101,15 +105,14 @@ extract_columns() {
 
     if ! validate_file "$file"; then
         return 1
-        fi
+    fi
 
     if [[ ! "$columns" =~ ^[0-9]+(,[0-9]+)*$ ]]; then
         log_error "Invalid column format: $columns Use format like: 1,3,5"
         return 1    
-    fi
+    fi    
 
-    #total_columns=$(awk -F',' 'NR==1 {print NF; exit}' "$file")
-    
+    log_info "Extracting columns: $columns from $file"
 
     awk -F',' -v cols="$columns" '
     BEGIN {
@@ -123,6 +126,7 @@ extract_columns() {
             print ""
         }
         ' "$file"
+    log_success "Column extraction completed successfully."
 }
 
 filter_data() {
@@ -133,8 +137,11 @@ filter_data() {
             return 1
         fi
 
+    log_info "Filrering data in $file using pattern: [$pattern]"
+
+
         if grep -i "$pattern" "$file"; then
-            log_success "Matching data found for: [$pattern] "
+            log_success "Filtering completed successfully."
         else
             log_warning "No matches found for: [$pattern] "
             return 1
@@ -148,36 +155,42 @@ calculate_stats() {
         if ! validate_file "$file"; then
             return 1
         fi
-    if [[ ! "$column" =~ ^[0-9]+$ ]]; then
-        log_error "Invalid column format: $column Use format like: 1,3,5"
-        return 1    
-    fi
 
-        awk -F',' -v col="$column" '
-        NR > 1 && $col != "" {
-            value = $col
+        if [[ ! "$column" =~ ^[0-9]+$ ]]; then
+            log_error "Invalid column format: $column Use format like: 1,3,5"
+            return 1    
+        fi
 
-            if (count == 0 || value < min) {
-            min = value
-            }
+    log_info "calculating data in $file using column: [$column]"
+    
+    awk -F',' -v col="$column" '
+    NR > 1 && $col != "" {
+        value = $col
 
-            if (count == 0 || value > max) {
-            max = value
-            }
-            sum += value
-            count++
+        if (count == 0 || value < min) {
+        min = value
         }
 
-        END {
-            print "----------------"
-            print "Statistics"
-            print "----------------"
-            print "Count  :", count
-            print "Min    :", min
-            print "Max    :", max
-            print "Average:", sum / count
+        if (count == 0 || value > max) {
+        max = value
         }
-        ' "$file"
+        sum += value
+        count++
+    }
+
+    END {
+        print "----------------"
+        print "Statistics"
+        print "----------------"
+        print "Count  :", count
+        print "Min    :", min
+        print "Max    :", max
+        print "Average:", sum / count
+    }
+    ' "$file"
+
+    log_success "Column calculating completed successfully."
+
 
 }
 
@@ -192,9 +205,11 @@ merge_files() {
             fi
     done
 
-cat "$@" > "$output_file"
+    log_info "Merging ${#@} files..."
 
-log_success "Files merged successfully into: $output_file"
+    cat "$@" > "$output_file"
+
+    log_success "Files merged successfully into: $output_file"
 
 }
 
@@ -207,6 +222,7 @@ deduplicate() {
         if ! validate_file "$file"; then
             return 1
         fi
+    log_info "Removing duplicate lines from: $file"
 
     original_count=$(wc -l < "$file")
 
@@ -219,15 +235,16 @@ deduplicate() {
     log_info "Original lines: $original_count"
     log_success "Unique lines: $unique_count"
     log_success "Duplicates removed: $duplicates_removed"
-
+    log_success "Deduplication completed successfully."
 }
 
 command_exists() {
     local command_name="$1"
+
     if command -v "$command_name" > /dev/null 2>&1; then
-        log_success "$command_name is installed."
+        log_success "Command $command_name is installed."
     else
-        log_error "$command_name is not installed."
+        log_error "Command $command_name is not installed."
         return 1
     fi
 }
@@ -235,12 +252,22 @@ command_exists() {
 check_dependencies() {
     local commands=("awk" "grep" "sort" "wc" "sed")
     local cmd
+    local missing=0
 
     log_info "Checking dependencies..."
 
     for cmd in "${commands[@]}"; do
-        command_exists "$cmd"
+        if ! command_exists "$cmd"; then
+            missing=1
+        fi
     done
+
+    if [[ "$missing" -eq 0 ]]; then
+        log_success "All required dependencies are installed."
+    else
+        log_error "One or more required dependencies are missing."
+        return 1
+    fi
 }
 
 init_directories() {
