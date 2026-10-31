@@ -573,3 +573,57 @@ The testing covered the required scenarios:
 
 For recoverable errors, the script displays an appropriate error or warning message and returns the user to the interactive menu instead of crashing.
 
+## Deliverables
+
+The final project includes:
+
+- `project_bash_script.sh`
+- `README.md`
+- Sample input files under `data/`
+- Generated output examples under `output/`
+- Log file example under `logs/project.log`
+- Screenshots demonstrating successful script execution
+- Screenshots demonstrating validation and error handling
+
+The project is organized and ready for submission.
+
+## Bonus Features
+
+The project also includes additional command-line options.
+
+### Help
+
+Display usage information:
+
+```bash
+./project_bash_script.sh --help
+```
+
+Example output:
+
+```text
+Bash Data Processing & Automation Toolkit
+
+Usage:
+  ./project_bash_script.sh
+  ./project_bash_script.sh --help
+  ./project_bash_script.sh --version
+
+Options:
+  --help       Show this help message
+  --version    Show script version
+```
+
+### Version
+
+Display the current script version:
+
+```bash
+./project_bash_script.sh --version
+```
+
+Example output:
+
+```text
+Bash Data Processing & Automation Toolkit v1.0
+```

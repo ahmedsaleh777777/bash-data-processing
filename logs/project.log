@@ -121,3 +121,16 @@
 [2026-10-31 15:10:00] [SUCCESS] Duplicates removed: 5
 [2026-10-31 15:10:00] [SUCCESS] Deduplication completed successfully.
 [2026-10-31 15:10:09] [INFO] Exiting...
+[2026-10-31 15:20:40] [INFO] Initializing directories...
+[2026-10-31 15:20:40] [SUCCESS] Required directories are ready.
+[2026-10-31 15:20:46] [ERROR] File not found: 
+[2026-10-31 15:20:48] [ERROR] Script interrupted by user.
+[2026-10-31 15:22:24] [INFO] Initializing directories...
+[2026-10-31 15:22:24] [SUCCESS] Required directories are ready.
+[2026-10-31 15:23:52] [ERROR] Script interrupted by user.
+[2026-10-31 15:24:15] [INFO] Initializing directories...
+[2026-10-31 15:24:15] [SUCCESS] Required directories are ready.
+[2026-10-31 15:24:34] [ERROR] Script interrupted by user.
+[2026-10-31 15:25:00] [INFO] Initializing directories...
+[2026-10-31 15:25:00] [SUCCESS] Required directories are ready.
+[2026-10-31 15:26:43] [ERROR] Script interrupted by user.

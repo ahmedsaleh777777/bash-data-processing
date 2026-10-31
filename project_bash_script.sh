@@ -10,6 +10,8 @@ NC='\033[0m'
 
 LOG_FILE="logs/project.log"
 
+VERSION="1.0"
+
 # Logging functions
 
 log_info() {
@@ -319,12 +321,34 @@ show_menu() {
     echo
 }
 
+show_help() {
+    echo "Bash Data Processing & Automation Toolkit"
+    echo
+    echo "Usage:"
+    echo "  ./project_bash_script.sh"
+    echo "  ./project_bash_script.sh --help"
+    echo "  ./project_bash_script.sh --version"
+    echo
+    echo "Options:"
+    echo "  --help       Show this help message"
+    echo "  --version    Show script version"
+}
+
+    if [[ "${1:-}" == "--help" ]]; then
+        show_help
+        exit 0
+    fi
+
+    if [[ "${1:-}" == "--version" ]]; then
+        echo "Bash Data Processing & Automation Toolkit v$VERSION"
+        exit 0
+    fi
+    
 init_directories
 
 while true; do
 
     show_menu
-
     read -p "Choose an option: " choice
 
         if [[ ! "$choice" =~ ^[0-9]+$ ]]; then
