@@ -58,8 +58,6 @@ handle_interrupt() {
 }
 
 trap handle_interrupt SIGINT
-echo sleeping for 3 seconds ...
-sleep 3
 
 # Validation function
 
@@ -89,7 +87,11 @@ validate_file() {
 
 count_lines() {
     local file="$1"
-    validate_file "$file"
+
+    if ! validate_file "$file"; then
+        return 1
+        fi
+
      wc -l "$file"
 }
 
@@ -97,7 +99,9 @@ extract_columns() {
     local file="$1"
     local columns="$2"
 
-    validate_file "$file"
+    if ! validate_file "$file"; then
+        return 1
+        fi
 
     if [[ ! "$columns" =~ ^[0-9]+(,[0-9]+)*$ ]]; then
         log_error "Invalid column format: $columns Use format like: 1,3,5"
@@ -125,7 +129,9 @@ filter_data() {
         local file="$1"
         local pattern="$2"
 
-        validate_file "$file"
+        if ! validate_file "$file"; then
+            return 1
+        fi
 
         if grep -i "$pattern" "$file"; then
             log_success "Matching data found for: [$pattern] "
@@ -139,8 +145,9 @@ calculate_stats() {
     local file="$1"
     local column="$2"
 
-    validate_file "$file"
-
+        if ! validate_file "$file"; then
+            return 1
+        fi
     if [[ ! "$column" =~ ^[0-9]+$ ]]; then
         log_error "Invalid column format: $column Use format like: 1,3,5"
         return 1    
@@ -178,8 +185,6 @@ merge_files() {
     local output_file="output/merged.txt"
     local file
 
-    mkdir -p "output"
-
     for file in "$@"; do
             if ! validate_file "$file"; then
                 log_error "Merge stopped because file is invalid: $file"
@@ -199,7 +204,9 @@ deduplicate() {
     local unique_count
     local duplicates_removed
 
-    validate_file "$file"
+        if ! validate_file "$file"; then
+            return 1
+        fi
 
     original_count=$(wc -l < "$file")
 
@@ -237,9 +244,11 @@ check_dependencies() {
 }
 
 init_directories() {
+    mkdir -p logs
+
     log_info "Initializing directories..."
 
-    mkdir -p data output logs
+    mkdir -p data output
 
     log_success "Required directories are ready."
 }
@@ -261,73 +270,74 @@ show_menu() {
     echo
 }
 
-# Test preparation
-add_line() {
-    echo "============================================================"
-}
-
-prepare_test_files() {
-    mkdir -p "test-files"
-
-    echo "Ahmed Saleh" > "test-files/found.txt"
-    echo "test data" > "test-files/unreadable.txt"
-    > "test-files/empty.txt"
-
-    chmod a-r "test-files/unreadable.txt"
-
-    cat > test-files/duplicates.txt <<'EOF'
-    Linux
-    Docker
-    Linux
-    Kubernetes
-    Docker
-    Git
-EOF
-}
-
-prepare_test_files
-
-add_line
-log_info "Starting data processing..."
-log_success "File processed successfully."
-log_warning "File contains empty values."
-log_error "File is missing!!!"
-add_line
-# Temporary tests
 init_directories
-add_line #14
-validate_file test-files/found.txt || true
-add_line #1
-validate_file test-files/notfound.txt || true
-add_line #2
-validate_file test-files/unreadable.txt || true
-add_line #3
-validate_file test-files/empty.txt || true
-add_line #4
-count_lines logs/project.log
-add_line #5
-extract_columns data/data.csv 1,2
-add_line #6
-filter_data data/data.csv "^a"
-add_line #7
-filter_data data/data.csv "hahaha" || true
-add_line #8
-calculate_stats "data/data.csv" 5
-add_line #9
-echo "File 1 data" > data/file1.txt
-echo "File 2 data" > data/file2.txt
-echo "File 3 data" > data/file3.txt
-merge_files data/file1.txt data/file2.txt data/file3.txt
-cat output/merged.txt
-add_line #10
-echo "test-files/duplicates.txt:" && cat test-files/duplicates.txt
-deduplicate test-files/duplicates.txt
-add_line #11
-command_exists awk
-command_exists hahahaha || true
-add_line #12
-check_dependencies
-add_line #13
 
-show_menu
-add_line #14
+while true; do
+
+    show_menu
+
+    read -p "Choose an option: " choice
+
+    case "$choice" in
+
+        1)
+            read -p "Enter file path: " file
+            count_lines "$file" || true
+            ;;
+
+        2)
+            read -p "Enter CSV file path: " file
+            read -p "Enter columns (example: 1,3,5): " columns
+
+            extract_columns "$file" "$columns" || true
+            ;;
+
+        3)
+            read -p "Enter file path: " file
+            read -p "Enter search pattern: " pattern
+
+            filter_data "$file" "$pattern" || true
+            ;;
+
+        4)
+            read -p "Enter CSV file path: " file
+            read -p "Enter numeric column number: " column
+
+            calculate_stats "$file" "$column" || true
+            ;;
+
+        5)
+            read -p "Enter files separated by spaces: " -a files
+
+            merge_files "${files[@]}" || true
+            ;;
+
+        6)
+            read -p "Enter file path: " file
+
+            deduplicate "$file" || true
+            ;;
+
+        7)
+            check_dependencies || true
+            ;;
+
+        8)
+            init_directories
+            ;;
+
+        9)
+            log_info "Exiting..."
+            exit 0
+            ;;
+
+        *)
+            log_error "Invalid choice. Please enter a number between 1 and 9."
+            ;;
+
+    esac
+
+    echo
+    read -p "Press Enter to continue..."
+
+done

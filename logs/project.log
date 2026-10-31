@@ -1003,3 +1003,121 @@
 [2026-10-30 20:32:13] [SUCCESS] sort is installed.
 [2026-10-30 20:32:13] [SUCCESS] wc is installed.
 [2026-10-30 20:32:13] [SUCCESS] sed is installed.
+[2026-10-30 20:37:25] [INFO] Starting data processing...
+[2026-10-30 20:37:25] [SUCCESS] File processed successfully.
+[2026-10-30 20:37:25] [WARNING] File contains empty values.
+[2026-10-30 20:37:25] [ERROR] File is missing!!!
+[2026-10-30 20:37:25] [INFO] Initializing directories...
+[2026-10-30 20:37:25] [SUCCESS] Required directories are ready.
+[2026-10-30 20:37:25] [SUCCESS] File is valid: test-files/found.txt
+[2026-10-30 20:37:25] [ERROR] File not found: test-files/notfound.txt
+[2026-10-30 20:37:25] [ERROR] File is not readable: test-files/unreadable.txt
+[2026-10-30 20:37:25] [WARNING] File is empty !: test-files/empty.txt
+[2026-10-30 20:37:25] [SUCCESS] File is valid: logs/project.log
+[2026-10-30 20:37:25] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:37:25] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:37:25] [SUCCESS] Matching data found for: [^a] 
+[2026-10-30 20:37:25] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:37:25] [WARNING] No matches found for: [hahaha] 
+[2026-10-30 20:37:25] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:37:25] [SUCCESS] File is valid: data/file1.txt
+[2026-10-30 20:37:25] [SUCCESS] File is valid: data/file2.txt
+[2026-10-30 20:37:25] [SUCCESS] File is valid: data/file3.txt
+[2026-10-30 20:37:25] [SUCCESS] Files merged successfully into: output/merged.txt
+[2026-10-30 20:37:25] [SUCCESS] File is valid: test-files/duplicates.txt
+[2026-10-30 20:37:25] [INFO] Original lines: 6
+[2026-10-30 20:37:25] [SUCCESS] Unique lines: 4
+[2026-10-30 20:37:25] [SUCCESS] Duplicates removed: 2
+[2026-10-30 20:37:25] [SUCCESS] awk is installed.
+[2026-10-30 20:37:25] [ERROR] hahahaha is not installed.
+[2026-10-30 20:37:25] [INFO] Checking dependencies...
+[2026-10-30 20:37:25] [SUCCESS] awk is installed.
+[2026-10-30 20:37:25] [SUCCESS] grep is installed.
+[2026-10-30 20:37:25] [SUCCESS] sort is installed.
+[2026-10-30 20:37:25] [SUCCESS] wc is installed.
+[2026-10-30 20:37:25] [SUCCESS] sed is installed.
+[2026-10-30 20:38:13] [INFO] Starting data processing...
+[2026-10-30 20:38:13] [SUCCESS] File processed successfully.
+[2026-10-30 20:38:13] [WARNING] File contains empty values.
+[2026-10-30 20:38:13] [ERROR] File is missing!!!
+[2026-10-30 20:38:13] [INFO] Initializing directories...
+[2026-10-30 20:38:13] [SUCCESS] Required directories are ready.
+[2026-10-30 20:38:13] [SUCCESS] File is valid: test-files/found.txt
+[2026-10-30 20:38:13] [ERROR] File not found: test-files/notfound.txt
+[2026-10-30 20:38:13] [ERROR] File is not readable: test-files/unreadable.txt
+[2026-10-30 20:38:13] [WARNING] File is empty !: test-files/empty.txt
+[2026-10-30 20:38:13] [SUCCESS] File is valid: logs/project.log
+[2026-10-30 20:38:13] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:38:13] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:38:13] [SUCCESS] Matching data found for: [^a] 
+[2026-10-30 20:38:13] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:38:13] [WARNING] No matches found for: [hahaha] 
+[2026-10-30 20:38:13] [SUCCESS] File is valid: data/data.csv
+[2026-10-30 20:38:13] [SUCCESS] File is valid: data/file1.txt
+[2026-10-30 20:38:13] [SUCCESS] File is valid: data/file2.txt
+[2026-10-30 20:38:13] [SUCCESS] File is valid: data/file3.txt
+[2026-10-30 20:38:13] [SUCCESS] Files merged successfully into: output/merged.txt
+[2026-10-30 20:38:13] [SUCCESS] File is valid: test-files/duplicates.txt
+[2026-10-30 20:38:13] [INFO] Original lines: 6
+[2026-10-30 20:38:13] [SUCCESS] Unique lines: 4
+[2026-10-30 20:38:13] [SUCCESS] Duplicates removed: 2
+[2026-10-30 20:38:13] [SUCCESS] awk is installed.
+[2026-10-30 20:38:13] [INFO] Checking dependencies...
+[2026-10-30 20:38:13] [SUCCESS] awk is installed.
+[2026-10-30 20:38:13] [SUCCESS] grep is installed.
+[2026-10-30 20:38:13] [SUCCESS] sort is installed.
+[2026-10-30 20:38:13] [SUCCESS] wc is installed.
+[2026-10-30 20:38:13] [SUCCESS] sed is installed.
+[2026-10-31 02:19:49] [INFO] Exiting...
+[2026-10-31 02:20:40] [INFO] Exiting...
+[2026-10-31 02:21:02] [SUCCESS] File is valid: logs/project.log
+[2026-10-31 02:21:38] [SUCCESS] File is valid: logs/project.log
+[2026-10-31 02:21:38] [SUCCESS] Matching data found for: [succ] 
+[2026-10-31 02:21:46] [ERROR] Invalid choice. Please enter a number between 1 and 9.
+[2026-10-31 02:21:52] [INFO] Exiting...
+[2026-10-31 02:23:49] [INFO] Starting data processing...
+[2026-10-31 02:23:49] [SUCCESS] File processed successfully.
+[2026-10-31 02:23:49] [WARNING] File contains empty values.
+[2026-10-31 02:23:49] [ERROR] File is missing!!!
+[2026-10-31 02:23:49] [INFO] Initializing directories...
+[2026-10-31 02:23:49] [SUCCESS] Required directories are ready.
+[2026-10-31 02:23:49] [SUCCESS] File is valid: test-files/found.txt
+[2026-10-31 02:23:49] [ERROR] File not found: test-files/notfound.txt
+[2026-10-31 02:23:49] [ERROR] File is not readable: test-files/unreadable.txt
+[2026-10-31 02:23:49] [WARNING] File is empty !: test-files/empty.txt
+[2026-10-31 02:23:49] [SUCCESS] File is valid: logs/project.log
+[2026-10-31 02:23:49] [SUCCESS] File is valid: data/data.csv
+[2026-10-31 02:23:49] [SUCCESS] File is valid: data/data.csv
+[2026-10-31 02:23:49] [SUCCESS] Matching data found for: [^a] 
+[2026-10-31 02:23:49] [SUCCESS] File is valid: data/data.csv
+[2026-10-31 02:23:49] [WARNING] No matches found for: [hahaha] 
+[2026-10-31 02:23:49] [SUCCESS] File is valid: data/data.csv
+[2026-10-31 02:23:49] [SUCCESS] File is valid: data/file1.txt
+[2026-10-31 02:23:49] [SUCCESS] File is valid: data/file2.txt
+[2026-10-31 02:23:49] [SUCCESS] File is valid: data/file3.txt
+[2026-10-31 02:23:49] [SUCCESS] Files merged successfully into: output/merged.txt
+[2026-10-31 02:23:49] [SUCCESS] File is valid: test-files/duplicates.txt
+[2026-10-31 02:23:49] [INFO] Original lines: 6
+[2026-10-31 02:23:49] [SUCCESS] Unique lines: 4
+[2026-10-31 02:23:49] [SUCCESS] Duplicates removed: 2
+[2026-10-31 02:23:49] [SUCCESS] awk is installed.
+[2026-10-31 02:23:49] [INFO] Checking dependencies...
+[2026-10-31 02:23:49] [SUCCESS] awk is installed.
+[2026-10-31 02:23:49] [SUCCESS] grep is installed.
+[2026-10-31 02:23:49] [SUCCESS] sort is installed.
+[2026-10-31 02:23:49] [SUCCESS] wc is installed.
+[2026-10-31 02:23:49] [SUCCESS] sed is installed.
+[2026-10-31 02:37:31] [ERROR] File not found: log/project.log
+[2026-10-31 02:37:47] [INFO] Initializing directories...
+[2026-10-31 02:37:47] [SUCCESS] Required directories are ready.
+[2026-10-31 02:38:35] [ERROR] Script interrupted by user.
+[2026-10-31 02:38:39] [INFO] Initializing directories...
+[2026-10-31 02:38:39] [SUCCESS] Required directories are ready.
+[2026-10-31 02:38:59] [SUCCESS] File is valid: logs/project.log
+[2026-10-31 02:38:59] [WARNING] No matches found for: [123] 
+[2026-10-31 02:39:17] [SUCCESS] File is valid: logs/project.log
+[2026-10-31 02:40:54] [ERROR] Script interrupted by user.
+[2026-10-31 02:43:26] [INFO] Initializing directories...
+[2026-10-31 02:43:26] [SUCCESS] Required directories are ready.
+[2026-10-31 02:43:31] [ERROR] File not found: log/log
+[2026-10-31 02:43:51] [SUCCESS] File is valid: logs/project.log
