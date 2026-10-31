@@ -531,3 +531,52 @@ Mona Alexandria
 ```
 
 Press Enter to return to the main menu.
+
+## Testing
+
+The Bash Data Processing & Automation Toolkit was tested using both valid and invalid inputs.
+
+The following test cases verify file validation, data processing functions, menu validation, dependency checking, error handling, and user interruption.
+
+### Valid Test Cases
+
+| Test Case | Test Input / Action | Expected Result | Evidence | Status |
+|---|---|---|---|---|
+| Existing file | `test-files/found.txt` | File is detected as valid and readable | Screenshot 04 – File Validation | Pass |
+| Count lines | Valid text/log file | Number of lines is displayed successfully | Screenshot 05 – Count Lines | Pass |
+| Valid CSV columns | `data/data.csv` with columns `1,3` | Selected CSV columns are displayed | Screenshot 06 – Extract Columns | Pass |
+| Valid filter pattern | Search for an existing pattern | Matching lines are displayed | Screenshot 08 – Filter Data | Pass |
+| Numeric statistics | `data/data.csv` with numeric column | Count, minimum, maximum, and average are displayed | Screenshot 09 – Calculate Statistics | Pass |
+| Multiple input files | Three valid files | Files are merged into `output/merged.txt` | Screenshot 10 – Merge Files | Pass |
+| Duplicate data | File containing repeated lines | Duplicate lines are removed and statistics are displayed | Screenshot 11 – Deduplicate | Pass |
+| Existing command | `awk` | Command is reported as installed | Screenshot 12 – Command Exists | Pass |
+| Dependency check | `awk`, `grep`, `sort`, `wc`, `sed` | All required dependencies are checked successfully | Screenshot 17 – Check Dependencies | Pass |
+| Initialize directories | Run directory initialization | `data`, `output`, and `logs` directories are available | Screenshot 14 – Initialize Directories | Pass |
+| Valid menu operation | Select an available menu option | Corresponding function executes and returns to menu | Screenshot 15 – Main Menu Operation | Pass |
+
+### Invalid Test Cases
+
+| Test Case | Test Input / Action | Expected Result | Evidence | Status |
+|---|---|---|---|---|
+| Non-existing file | Invalid file path | `[ERROR] File not found` is displayed | Screenshot 04 – File Validation | Pass |
+| Unreadable file | File without read permission | `[ERROR] File is not readable` is displayed | Screenshot 04 – File Validation | Pass |
+| Empty file | Empty test file | `[WARNING] File is empty` is displayed | Screenshot 04 – File Validation | Pass |
+| Invalid column format | Invalid CSV column input | Invalid column format error is displayed | Screenshot 07 – Extract Columns Error | Pass |
+| Invalid column number | Column number greater than available CSV columns | Invalid column number error is displayed | Extract Columns Validation Test | Pass |
+| Filter with no matches | Pattern that does not exist | Warning is displayed and operation returns safely | Screenshot 08 – Filter Data | Pass |
+| Invalid menu input | `asd` / `abc` | Invalid option error is displayed | Screenshot 16 – Input Validation | Pass |
+| Invalid menu choice | `10` / `15` | `[ERROR] Invalid choice.` is displayed | Screenshot 16 – Input Validation | Pass |
+| Missing dependency | Temporary unavailable/fake command | Missing dependency error is displayed | Dependency Validation Test | Pass |
+| User interruption | Press `Ctrl+C` | Interruption is logged and script exits safely | Screenshot 03 – Ctrl+C Error Handling | Pass |
+
+### Error Handling Verification
+
+The script was also tested to verify that invalid user operations do not crash the interactive menu.
+
+For recoverable errors, the script displays an appropriate error or warning message and then allows the user to return to the main menu using:
+
+```text
+Press Enter to continue...
+```
+
+`Ctrl+C` interruption is handled separately using the `SIGINT` trap and exits the script with status code `130`.
