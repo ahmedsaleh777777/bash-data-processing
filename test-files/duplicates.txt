@@ -1,6 +1,0 @@
-    Linux
-    Docker
-    Linux
-    Kubernetes
-    Docker
-    Git

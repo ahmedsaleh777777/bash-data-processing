@@ -154,7 +154,7 @@ filter_data() {
 
         log_info "Filtering data in $file using pattern: [$pattern]"
 
-        if grep -i -- "$pattern" "$file"; then
+        if grep -i -- "$pattern" "$file" | tee "output/filtered.txt"; then
             log_success "Filtering completed successfully."
         else
             log_warning "No matches found for: [$pattern] "
@@ -248,9 +248,9 @@ deduplicate() {
 
     original_count=$(wc -l < "$file")
 
-    sort -u "$file" > "output/deduplicated.txt"
+    sort -u "$file" > "output/unique.txt"
 
-    unique_count=$(wc -l < "output/deduplicated.txt")
+    unique_count=$(wc -l < "output/unique.txt")
 
     duplicates_removed=$((original_count - unique_count))
 

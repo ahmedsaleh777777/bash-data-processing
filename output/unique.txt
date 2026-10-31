@@ -1,0 +1,7 @@
+Ansible
+Bash
+Docker
+Git
+Kubernetes
+Linux
+Terraform

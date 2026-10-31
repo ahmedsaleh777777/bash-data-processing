@@ -112,3 +112,12 @@
 [2026-10-31 14:09:42] [SUCCESS] Line count completed successfully.
 [2026-10-31 14:10:00] [ERROR] File not found: data/data.csc
 [2026-10-31 14:13:00] [INFO] Exiting...
+[2026-10-31 15:09:20] [INFO] Initializing directories...
+[2026-10-31 15:09:20] [SUCCESS] Required directories are ready.
+[2026-10-31 15:10:00] [SUCCESS] File is valid: data/sample.txt
+[2026-10-31 15:10:00] [INFO] Removing duplicate lines from: data/sample.txt
+[2026-10-31 15:10:00] [INFO] Original lines: 12
+[2026-10-31 15:10:00] [SUCCESS] Unique lines: 7
+[2026-10-31 15:10:00] [SUCCESS] Duplicates removed: 5
+[2026-10-31 15:10:00] [SUCCESS] Deduplication completed successfully.
+[2026-10-31 15:10:09] [INFO] Exiting...
