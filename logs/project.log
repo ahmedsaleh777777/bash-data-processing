@@ -105,3 +105,10 @@
 [2026-10-31 13:31:05] [ERROR] File not found: 
 [2026-10-31 13:31:06] [ERROR] Invalid option. Please enter a number between 1 and 9.
 [2026-10-31 13:31:08] [INFO] Exiting...
+[2026-10-31 14:09:27] [INFO] Initializing directories...
+[2026-10-31 14:09:27] [SUCCESS] Required directories are ready.
+[2026-10-31 14:09:42] [SUCCESS] File is valid: data/sample.txt
+[2026-10-31 14:09:42] [INFO] Counting lines in: data/sample.txt
+[2026-10-31 14:09:42] [SUCCESS] Line count completed successfully.
+[2026-10-31 14:10:00] [ERROR] File not found: data/data.csc
+[2026-10-31 14:13:00] [INFO] Exiting...
